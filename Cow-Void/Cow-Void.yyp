@@ -11,6 +11,9 @@
   "defaultScriptType":0,
   "Folders":[
     {"$GMFolder":"","%Name":"Art","folderPath":"folders/Art.yy","name":"Art","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"ArtCow","folderPath":"folders/Art/Environment/ArtCow.yy","name":"ArtCow","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Enviroment","folderPath":"folders/Art/Environment/ArtCow/Enviroment.yy","name":"Enviroment","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Background","folderPath":"folders/Art/Environment/ArtCow/Enviroment/Background.yy","name":"Background","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Effects","folderPath":"folders/Art/Effects.yy","name":"Effects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Explosion_Two","folderPath":"folders/Art/Effects/Explosion_Two.yy","name":"Explosion_Two","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Explosion","folderPath":"folders/Art/Effects/Explosion.yy","name":"Explosion","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -180,6 +183,7 @@
     {"id":{"name":"Track216","path":"sounds/Track216/Track216.yy",},},
     {"id":{"name":"Background1","path":"sprites/Background1/Background1.yy",},},
     {"id":{"name":"Background2","path":"sprites/Background2/Background2.yy",},},
+    {"id":{"name":"Background238","path":"sprites/Background238/Background238.yy",},},
     {"id":{"name":"Background3","path":"sprites/Background3/Background3.yy",},},
     {"id":{"name":"Background4","path":"sprites/Background4/Background4.yy",},},
     {"id":{"name":"Background5","path":"sprites/Background5/Background5.yy",},},
