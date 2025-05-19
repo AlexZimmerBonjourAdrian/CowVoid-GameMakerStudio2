@@ -1,23 +1,27 @@
-instance_destroy();
-with (other) instance_destroy(); 
 
-// Crear sistema de partículas local
-var ps = part_system_create();
-part_system_position(ps, x, y);
+if (instance_exists(other)) {
+    instance_destroy(other);
+}
 
-// Partículas de explosión
-var p = part_type_create();
-part_type_shape(p, pt_shape_spark);
-part_type_color1(p, c_red);
-part_type_size(p, 0.5, 0.2, -0.1, 0);
-part_type_speed(p, 2, 5, -0.2, 0);
-part_type_direction(p, 0, 360, 0, 0);
-part_type_life(p, 10, 20);
 
-// Generar partículas
-part_particles_create(ps, x, y, p, 20);
+image_blend = c_red;
+alarm[0] = 5;
 
-// Destruir el sistema después de 1 segundo (para optimizar)
-alarm[0] = 30; // 30 frames = ~1 seg (ajusta según room_speed)
+vida -= 1;
 
-score += 10;
+if(vida <= 0) {
+	effect_create_above(ef_firework, x, y, 1, c_white);
+	if (sprite_index == MeteoritoGrande) {
+	sprite_index = MeteoritoMedio;
+    instance_copy(true);
+	vida = 3;
+} else if(sprite_index == MeteoritoMedio) {
+	sprite_index = MeteoritoChico;
+	instance_copy(true);
+	vida = 1;
+} else {
+	instance_destroy();	
+}
+}
+
+

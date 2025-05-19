@@ -1,6 +1,3 @@
-image_angle += rotation_speed;
+move_wrap(true, true, 100);
 
-// Destruir si sale de la pantalla
-if (y > room_height + 50) {
-    instance_destroy();
-}
+image_angle += 1;

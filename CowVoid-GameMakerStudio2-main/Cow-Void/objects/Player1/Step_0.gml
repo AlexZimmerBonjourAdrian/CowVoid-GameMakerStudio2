@@ -5,8 +5,9 @@ var xdirection = pressed_right - pressed_left;
 var move_speed = 10;
 x = x + (xdirection * move_speed);
 
+move_wrap(true, true, 0);
 
-if (keyboard_check_pressed(vk_space)) {
+if (keyboard_check(vk_space)) {
     var bullet = instance_create_layer(x, y, "Instances", Bullet);
     bullet.x = x - 70;
     bullet.y = y - 70;
@@ -23,8 +24,14 @@ if (random(90) < 1) {
     );
     
     meteor.direction = point_direction(meteor.x, meteor.y, x, y);
-    meteor.speed = random_range(1, 3); 
+    meteor.speed = 10; 
     
-    // Rotación aleatoria
     meteor.rotation_speed = random_range(-3, 3);
 }
+
+if (instance_number(blackhole_obj) == 0) {
+    var bh = instance_create_layer(x, y - 40, "Instances", blackhole_obj);
+
+    bh.alarm[0] = 150;
+}
+
