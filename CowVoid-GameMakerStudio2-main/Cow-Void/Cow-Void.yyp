@@ -70,6 +70,9 @@
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rutas","folderPath":"folders/Rutas.yy","name":"Rutas","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Salas","folderPath":"folders/Salas.yy","name":"Salas","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"BattleLevels","folderPath":"folders/Salas/BattleLevels.yy","name":"BattleLevels","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Debug","folderPath":"folders/Salas/Debug.yy","name":"Debug","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"StorieLevels","folderPath":"folders/Salas/StorieLevels.yy","name":"StorieLevels","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Secuencias","folderPath":"folders/Secuencias.yy","name":"Secuencias","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Shaders","folderPath":"folders/Shaders.yy","name":"Shaders","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -91,7 +94,9 @@
     {"id":{"name":"Meteorite","path":"objects/Meteorite/Meteorite.yy",},},
     {"id":{"name":"Player1","path":"objects/Player1/Player1.yy",},},
     {"id":{"name":"Player2","path":"objects/Player2/Player2.yy",},},
+    {"id":{"name":"Dialogue","path":"rooms/Dialogue/Dialogue.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"SFX_Electrodes1","path":"sounds/SFX_Electrodes1/SFX_Electrodes1.yy",},},
     {"id":{"name":"SFX_Electrodes2","path":"sounds/SFX_Electrodes2/SFX_Electrodes2.yy",},},
     {"id":{"name":"SFX_Electrodes3","path":"sounds/SFX_Electrodes3/SFX_Electrodes3.yy",},},
@@ -459,6 +464,8 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
+    {"roomId":{"name":"Dialogue","path":"rooms/Dialogue/Dialogue.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
