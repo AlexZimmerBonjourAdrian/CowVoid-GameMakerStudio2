@@ -1,6 +1,9 @@
-image_angle += rotation_speed;
+x += vw;
+y += vh;
 
-// Destruir si sale de la pantalla
-if (y > room_height + 50) {
+// Destrucción si sale de pantalla
+if (x < -sprite_width || x > room_width + sprite_width) {
     instance_destroy();
 }
+
+image_angle += rotation_speed;

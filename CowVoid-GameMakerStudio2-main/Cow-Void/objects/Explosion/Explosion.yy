@@ -1,14 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"Meteorite",
+  "%Name":"Explosion",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Bullet","path":"objects/Bullet/Bullet.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Gusano","path":"objects/Gusano/Gusano.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":7,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Meteorite",
+  "name":"Explosion",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -33,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"MeteoritoGrande",
-    "path":"sprites/MeteoritoGrande/MeteoritoGrande.yy",
+    "name":"Sprite271",
+    "path":"sprites/Sprite271/Sprite271.yy",
   },
   "spriteMaskId":null,
   "visible":true,
