@@ -28,7 +28,7 @@ else if (state == "bouncing") {
     }
 }
 else if (state == "leaving") {
-    y += vh * 3;
+    y += vh * 6 * dir;
     if (y > room_height || y < 0) {
         instance_destroy();
     }
