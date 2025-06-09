@@ -5,4 +5,4 @@ y = y - sprite_height / 2;
 x = x - sprite_width / 2;
 
 
-image_speed = 0.5; // controla qué tan rápido se anima
+image_speed = 1.5; // controla qué tan rápido se anima

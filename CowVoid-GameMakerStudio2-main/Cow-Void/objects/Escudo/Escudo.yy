@@ -1,13 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"Player2",
+  "%Name":"Escudo",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Meteorite","path":"objects/Meteorite/Meteorite.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Player2",
+  "name":"Escudo",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -32,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"PlayerShip_Heavy",
-    "path":"sprites/PlayerShip_Heavy/PlayerShip_Heavy.yy",
+    "name":"EscudoSPR",
+    "path":"sprites/EscudoSPR/EscudoSPR.yy",
   },
   "spriteMaskId":null,
   "visible":true,
