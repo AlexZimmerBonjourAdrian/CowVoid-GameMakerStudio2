@@ -11,3 +11,4 @@ ini_close();
 
 alarm[0] = room_speed * 2; // GUSANOS
 alarm[1] = room_speed * 2; // ASTEROIDES
+alarm[2] = room_speed * 2; // AGUJERO DE GUSANO
