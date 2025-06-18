@@ -1,1 +1,1 @@
-room_goto(PvP);
+room_goto(Dialogs);
