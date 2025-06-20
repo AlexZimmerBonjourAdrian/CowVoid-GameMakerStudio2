@@ -1,9 +1,13 @@
-var d = dialogos[dialogo_actual];
+// Evitar acceder fuera de rango
+if (dialogo_actual < array_length(dialogos)) {
+    var d = dialogos[dialogo_actual];
+} else {
+    exit;
+}
 
-// Mostrar texto letra por letra
+// Mostrar letra por letra
 if (!esperando_input) {
     frame_counter++;
-
     if (frame_counter >= velocidad_texto) {
         frame_counter = 0;
 
@@ -11,11 +15,10 @@ if (!esperando_input) {
             char_index++;
             texto_mostrado = string_copy(d.texto, 1, char_index);
         } else {
-            esperando_input = true; // esperar confirmación para pasar
+            esperando_input = true;
         }
     }
 
-    // Si el jugador quiere saltear el texto:
     if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter)) {
         if (char_index < string_length(d.texto)) {
             texto_mostrado = d.texto;
@@ -24,17 +27,18 @@ if (!esperando_input) {
         }
     }
 } else {
-    // Si ya terminó de mostrar, esperar para avanzar
     if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter)) {
-        dialogo_actual++;
-        char_index = 0;
-        texto_mostrado = "";
-        esperando_input = false;
-		
-		if (dialogo_actual >= array_length(dialogos)) {
-		    // Fin del diálogo
-		    instance_destroy();
-		    room_goto(PvP);
-		}
+        if (dialogo_terminado) {
+            contador_transicion++;
+        } else {
+            if (dialogo_actual < array_length(dialogos) - 1) {
+                dialogo_actual++;
+                char_index = 0;
+                texto_mostrado = "";
+                esperando_input = false;
+            } else {
+                room_goto(PvP);
+            }
+        }
     }
 }

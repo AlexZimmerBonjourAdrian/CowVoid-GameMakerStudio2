@@ -12,8 +12,8 @@
   "duration":5.302857,
   "name":"Track2_Lose",
   "parent":{
-    "name":"MP3",
-    "path":"folders/Audio/Music/MP3.yy",
+    "name":"default",
+    "path":"folders/Audio/Music/MP3/default.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

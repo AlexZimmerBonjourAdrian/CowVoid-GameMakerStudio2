@@ -12,8 +12,8 @@
   "duration":7.026939,
   "name":"Track1_Win",
   "parent":{
-    "name":"MP3",
-    "path":"folders/Audio/Music/MP3.yy",
+    "name":"default",
+    "path":"folders/Audio/Music/MP3/default.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

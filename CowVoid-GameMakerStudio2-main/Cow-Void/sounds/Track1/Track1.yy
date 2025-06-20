@@ -12,8 +12,8 @@
   "duration":132.23184,
   "name":"Track1",
   "parent":{
-    "name":"MP3",
-    "path":"folders/Audio/Music/MP3.yy",
+    "name":"default",
+    "path":"folders/Audio/Music/MP3/default.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

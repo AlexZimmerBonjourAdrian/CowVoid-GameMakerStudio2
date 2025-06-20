@@ -18,13 +18,6 @@ audio_master_gain(global.music_volume);
 
 ini_close();
 
-// Musica
-music_playing = false;
-if (!music_playing) {
-//    audio_play_sound(snd_menu, true, 1);
-    music_playing = true;
-}
-
 opcion_actual = 0;
 
 if (keyboard_check_pressed(vk_down)) {

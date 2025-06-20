@@ -1,19 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"dialog_controller",
+  "%Name":"menu_config_music_controller",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":1,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"dialog_controller",
+  "name":"menu_config_music_controller",
   "overriddenProperties":[],
   "parent":{
-    "name":"Dialogs",
-    "path":"folders/Objetos/Dialogs.yy",
+    "name":"Menu",
+    "path":"folders/Objetos/Menu.yy",
   },
   "parentObjectId":null,
   "persistent":false,

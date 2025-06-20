@@ -9,6 +9,14 @@ audio_master_gain(global.music_volume);
 
 ini_close();
 
+// Detener música dialogos
+audio_stop_sound(snd_musica_dialog);
+
+// Reproducir música duelo
+if (!audio_is_playing(snd_musica_duelo)) {
+    audio_play_sound(snd_musica_duelo, 1, true); // 1 = prioridad, true = loop
+}
+
 alarm[0] = room_speed * 2; // GUSANOS
 alarm[1] = room_speed * 2; // ASTEROIDES
 alarm[2] = room_speed * 2; // AGUJERO DE GUSANO
