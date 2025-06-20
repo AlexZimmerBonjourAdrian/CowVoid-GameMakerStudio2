@@ -40,4 +40,5 @@ esperando_input = false;
 velocidad_texto = 2;
 frame_counter = 0;
 
+// Música
 audio_play_sound(snd_musica_dialog, 1, true); // 1 = prioridad, true = loop

@@ -20,4 +20,8 @@ draw_sprite(spr, 0, box_x + 8, box_y + 8);
 
 // Texto
 draw_set_color(c_white);
-draw_text(box_x + 72, box_y + 8, texto_mostrado);
+draw_text(box_x + 120, box_y + 16, texto_mostrado);
+
+// Nombre
+draw_set_color(c_white);
+draw_text(box_x + 120, box_y, dialogos[dialogo_actual].nombre);
