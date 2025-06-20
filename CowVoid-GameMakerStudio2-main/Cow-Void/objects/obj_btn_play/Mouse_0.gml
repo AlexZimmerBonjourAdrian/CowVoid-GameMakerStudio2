@@ -1,1 +1,1 @@
-room_goto(Dialogs);
+instance_create_layer(0, 0, "Transiciones", obj_transicion);

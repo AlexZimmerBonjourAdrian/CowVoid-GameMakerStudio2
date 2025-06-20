@@ -37,8 +37,21 @@ if (!esperando_input) {
                 texto_mostrado = "";
                 esperando_input = false;
             } else {
-                room_goto(PvP);
+				fade_out=true;
+
             }
         }
     }
+}
+if(fade_out){
+	if (audio_is_playing(snd_musica_dialog)) {
+		var volumen_actual = audio_sound_get_gain(snd_musica_dialog);
+		var nuevo_volumen = max(0, volumen_actual - fade_step);
+		audio_sound_gain(snd_musica_dialog, nuevo_volumen, 0);
+
+		if (nuevo_volumen <= 0) {
+			audio_stop_sound(snd_musica_dialog);
+			room_goto(PvP);
+		}
+	}	
 }
