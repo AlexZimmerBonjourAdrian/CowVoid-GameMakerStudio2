@@ -1,5 +1,20 @@
-hp = 5;
-sprite_index = spr_gusano
+sprite_index = spr_gusano_cabeza
+
+// Cantidad de partes del cuerpo al comenzar
+segment_count = 3;
+segment_spacing = 10;
+head_history = [];
+max_history = segment_count * segment_spacing;
+
+// Lista de posiciones de segmentos
+segments = [];
+
+// Inicializar segmentos detrás de la cabeza
+for (var i = 0; i < segment_count; i++) {
+    array_push(segments, [x, y - ((i + 1) * 64)]); // separados 16 px
+}
+
+// Sprite principal (cabeza)
 
 vw = 6;
 vh = 2;
@@ -8,4 +23,4 @@ zigzag_timer = 0;
 state = "zigzag"; // puede cambiar a "bouncing" y luego "leaving"
 bounces = 0;
 max_bounces = 4;
-
+dir = 0;

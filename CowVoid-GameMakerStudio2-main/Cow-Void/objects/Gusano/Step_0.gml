@@ -33,3 +33,9 @@ else if (state == "leaving") {
         instance_destroy();
     }
 }
+
+array_insert(head_history, 0, [x, y]);
+
+if (array_length(head_history) > max_history) {
+    array_resize(head_history, max_history);
+}
