@@ -11,3 +11,14 @@ direction = (direction + 180 + desvio) mod 360;
 
     }
 }
+
+if(nodmg) {
+	
+	timer_dmg -= 1;
+	
+	if(timer_dmg <= 0) {
+	
+		nodmg = false;
+	}
+
+}
