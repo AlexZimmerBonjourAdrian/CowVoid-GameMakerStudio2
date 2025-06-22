@@ -1,7 +1,7 @@
 varying vec2 v_vTexcoord;
 
 uniform float u_time;
-uniform vec2 u_position; // centro UV
+uniform vec2 u_position;
 uniform float u_radius;
 
 void main() {
@@ -16,7 +16,7 @@ void main() {
         float angle = atan(offset.y, offset.x);
 
         // Velocidad y cantidad de rotación (ajustar factor)
-        float rotation = u_time * 0.75 * strength;
+        float rotation = u_time * u_radius *  150.0 * strength;
 
         // Nueva posición rotada
         float s = sin(angle + rotation);

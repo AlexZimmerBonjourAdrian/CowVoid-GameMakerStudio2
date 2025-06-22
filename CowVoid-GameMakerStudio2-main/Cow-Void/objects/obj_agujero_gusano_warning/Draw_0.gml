@@ -19,7 +19,8 @@ var u_position = shader_get_uniform(sh_distorsion, "u_position");
 var u_radius   = shader_get_uniform(sh_distorsion, "u_radius");
 
 // Tiempo en segundos
-shader_set_uniform_f(u_time, current_time / 1000);
+var t_relativo = (current_time - tiempo_inicio) / 1000;
+shader_set_uniform_f(u_time, t_relativo);
 
 // Coordenadas del centro de distorsión (en píxeles de pantalla)
 var cx = x;
