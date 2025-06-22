@@ -1,11 +1,19 @@
-x = x == 0 ? -sprite_width : room_width + sprite_width;
+// Posición inicial en X: entra desde fuera de la room
+x = choose(-sprite_width, room_width + sprite_width);
 
+
+y = room_height / 2;
+
+// Dirección horizontal
 if (x < room_width / 2) {
-    vw = random_range(2, 4); // viene desde la izquierda
+    vw = random_range(2, 4);
 } else {
-    vw = -random_range(2, 4); // viene desde la derecha
+    vw = -random_range(2, 4); 
 }
-vh = random_range(-3, 3)
-// Rotación aleatoria
+
+
+vh = 0;
+
+// Rotación aleatoria (opcional)
 image_angle = random(360);
-rotation_speed = random_range(-3, 3); // Giro aleatorio
+rotation_speed = random_range(-3, 3);
