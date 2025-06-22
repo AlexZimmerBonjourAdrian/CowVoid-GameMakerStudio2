@@ -39,7 +39,8 @@ shader_set_uniform_f(u_radius, radio);
 var w_view = camera_get_view_width(view_camera[0]);
 var h_view = camera_get_view_height(view_camera[0]);
 
-draw_surface_stretched(surf_temp, 0, 0, w_view, h_view);
+draw_surface_stretched(surf_temp, 0, 0, surf_width, surf_height);
+
 
 // Restaurar shader
 shader_reset();

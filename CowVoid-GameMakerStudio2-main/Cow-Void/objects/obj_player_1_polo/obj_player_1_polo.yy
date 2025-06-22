@@ -1,6 +1,6 @@
 {
   "$GMObject":"",
-  "%Name":"Player1",
+  "%Name":"obj_player_1_polo",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
@@ -8,7 +8,7 @@
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Player1",
+  "name":"obj_player_1_polo",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"EnemyShip1_Upgraded_Tilt2",
-    "path":"sprites/EnemyShip1_Upgraded_Tilt2/EnemyShip1_Upgraded_Tilt2.yy",
+    "name":"spr_player_1_polo",
+    "path":"sprites/spr_player_1_polo/spr_player_1_polo.yy",
   },
   "spriteMaskId":null,
   "visible":true,

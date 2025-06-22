@@ -4,7 +4,7 @@ if (!invulnerable) {
     invul_timer = 60;
 
     if (vidas <= 0) {
-		effect_create_above(ef_firework, Player1.x, Player1.y, 1, c_white);
+		effect_create_above(ef_firework, obj_player_1_polo.x, obj_player_1_polo.y, 1, c_white);
         instance_destroy();
     }
 	
