@@ -483,6 +483,7 @@
     {"id":{"name":"spr_btn_save_config","path":"sprites/spr_btn_save_config/spr_btn_save_config.yy",},},
     {"id":{"name":"spr_btn_toggle_fullscreen","path":"sprites/spr_btn_toggle_fullscreen/spr_btn_toggle_fullscreen.yy",},},
     {"id":{"name":"spr_gusano_body_big","path":"sprites/spr_gusano_body_big/spr_gusano_body_big.yy",},},
+    {"id":{"name":"spr_gusano_body_small","path":"sprites/spr_gusano_body_small/spr_gusano_body_small.yy",},},
     {"id":{"name":"spr_gusano_cabeza","path":"sprites/spr_gusano_cabeza/spr_gusano_cabeza.yy",},},
     {"id":{"name":"spr_gusano_hit","path":"sprites/spr_gusano_hit/spr_gusano_hit.yy",},},
     {"id":{"name":"spr_gusano","path":"sprites/spr_gusano/spr_gusano.yy",},},

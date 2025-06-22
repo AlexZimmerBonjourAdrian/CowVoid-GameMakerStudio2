@@ -1,8 +1,8 @@
 sprite_index = spr_gusano_cabeza
 
 // Cantidad de partes del cuerpo al comenzar
-segment_count = 3;
-segment_spacing = 10;
+segment_count = 6;
+segment_spacing = 32;
 head_history = [];
 max_history = segment_count * segment_spacing;
 
@@ -11,7 +11,7 @@ segments = [];
 
 // Inicializar segmentos detrás de la cabeza
 for (var i = 0; i < segment_count; i++) {
-    array_push(segments, [x, y - ((i + 1) * 64)]); // separados 16 px
+    array_push(segments, [x, y - ((i + 1) * 32)]); // separados 16 px
 }
 
 // Sprite principal (cabeza)
