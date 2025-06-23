@@ -2,7 +2,7 @@
 var pressed_left = keyboard_check(ord("A"));
 var pressed_right = keyboard_check(ord("D"));
 var xdirection = pressed_right - pressed_left;
-var move_speed = 10;
+var move_speed = 30;
 x = x + (xdirection * move_speed);
 
 if (damaged) {
@@ -31,6 +31,7 @@ if (keyboard_check_pressed(ord("E"))) {
     escudo_timer = 300; 
 
     var escudo = instance_create_layer(x, y, "Instances", Escudo);
+	escudo.sprite_index = EscudoPolo;
     escudo.owner = id;
 }
 

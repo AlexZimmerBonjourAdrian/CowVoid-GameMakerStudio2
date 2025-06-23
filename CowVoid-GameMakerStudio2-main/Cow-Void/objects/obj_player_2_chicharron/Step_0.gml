@@ -2,7 +2,7 @@
 var pressed_left = keyboard_check(vk_left);  // ←
 var pressed_right = keyboard_check(vk_right); // →
 var xdirection = pressed_right - pressed_left;
-var move_speed = 10;
+var move_speed = 30;
 x = x + (xdirection * move_speed);
 
 
@@ -36,6 +36,7 @@ if (keyboard_check_pressed(ord("O"))) {
 
     var escudo = instance_create_layer(x, y, "Instances", Escudo);
     escudo.owner = id;
+	escudo.sprite_index = EscudoChicharron
 }
 
 if (keyboard_check_pressed(vk_enter)) {
@@ -71,6 +72,8 @@ if (escudo_activado) {
 		
     }
 }
+
+
 
 if (x > room_width) {
     x = 0;
