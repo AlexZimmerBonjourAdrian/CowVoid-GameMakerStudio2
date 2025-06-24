@@ -12,4 +12,7 @@ if (other.owner != owner && !damaged) {
 		dmg_timer = 10;
 	}
 	with (other) instance_destroy();
+}else if (other.owner == owner){
+	with (other) instance_destroy();
+
 }

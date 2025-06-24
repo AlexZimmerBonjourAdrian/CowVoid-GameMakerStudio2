@@ -1,35 +1,24 @@
 if (state == "zigzag") {
-	if(y < 0){
-		dir = -1;
-	}else if (y > room_height - sprite_height){
-		dir = 1;
+	if(entrance_time > 0){
+		entrance_time = entrance_time - 1;
+	}else if (y > room_height - sprite_height / 2 || y < 0 - vh){
+		dir = dir * -1;
+		bounces = bounces + 1;
+		show_debug_message("sumando " + string(y));
 	}
 	
-    y -= vh * dir;
-    x += sin(degtorad(zigzag_timer)) * vw;
-    zigzag_timer += 10;
-	
-    if (y == 0 || y == room_height - sprite_height) {
-        state = "bouncing";
-    }
-}
-else if (state == "bouncing") {
-    y += dir * vh;
-    if (y < 0 || y > room_height - sprite_height) {
-        dir *= -1;
-        bounces += 1;
-    }
-
-    x += sin(degtorad(zigzag_timer)) * vw;
-    zigzag_timer += 10;
-
-    if (bounces >= max_bounces) {
+	 if (bounces >= max_bounces) {
         state = "leaving";
+		segment_spacing = segment_spacing / 3;
     }
+	
+    y += vh * dir;
+    x += sin(degtorad(zigzag_timer)) * vw;
+    zigzag_timer += 10;
 }
 else if (state == "leaving") {
-    y += vh * 6 * dir;
-    if (y > room_height || y < 0) {
+    y += vh * 3 * dir;
+    if (y > room_height + sprite_height * segment_count || y < 0 - vh - sprite_height * segment_count) {
         instance_destroy();
     }
 }
