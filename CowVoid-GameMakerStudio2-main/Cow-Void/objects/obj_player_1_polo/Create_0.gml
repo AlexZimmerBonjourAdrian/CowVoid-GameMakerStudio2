@@ -1,7 +1,3 @@
-
-y = 1000;
-x = room_width / 2;
-
 image_blend = c_white;
 damaged = false;
 timer_dmg = 0;

@@ -1,8 +1,3 @@
-show_debug_message("Evento Create ejecutado");
-
-y = 80;
-x = room_width / 2;
-
 image_blend = c_white;
 damaged = false;
 timer_dmg = 0;
