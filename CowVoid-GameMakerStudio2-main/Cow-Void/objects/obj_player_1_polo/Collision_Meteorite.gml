@@ -1,5 +1,12 @@
 if (!invulnerable) {
     vidas -= 1;
+    
+    // Actualizar variables globales del GameManager
+    global.player1_lives = vidas;
+    if (vidas <= 0) {
+        global.player1_alive = false;
+    }
+    
     invulnerable = true;
     invul_timer = 60;
 
