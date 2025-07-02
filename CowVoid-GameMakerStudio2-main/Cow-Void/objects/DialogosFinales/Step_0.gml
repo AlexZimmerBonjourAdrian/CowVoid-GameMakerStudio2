@@ -44,6 +44,7 @@ if (!esperando_input) {
     }
 }
 if(fade_out){
+	audio_stop_sound(charlafinal)
 	room_goto(PvP);
 		
 }

@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":185.14285,
+  "duration":70.82522,
   "name":"snd_musica_duelo",
   "parent":{
     "name":"MP3",

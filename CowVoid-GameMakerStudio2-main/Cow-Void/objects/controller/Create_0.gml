@@ -10,7 +10,7 @@ audio_master_gain(global.music_volume);
 ini_close();
 
 // Detener música dialogos
-audio_stop_sound(snd_musica_dialog);
+
 
 // Reproducir música duelo
 if (!audio_is_playing(snd_musica_duelo)) {

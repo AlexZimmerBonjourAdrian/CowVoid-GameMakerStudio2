@@ -41,6 +41,5 @@ velocidad_texto = 2;
 frame_counter = 0;
 
 // Música
-audio_play_sound(snd_musica_dialog, 1, true); // 1 = prioridad, true = loop
 fade_step = 0.02
 fade_out=false

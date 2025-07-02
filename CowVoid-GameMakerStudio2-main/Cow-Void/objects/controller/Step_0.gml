@@ -12,3 +12,6 @@ if (random(45) < 1) {
     // Rotación aleatoria
     meteor.rotation_speed = random_range(-3, 3);
 }
+audio_stop_sound(snd_musica_dialog);
+audio_sound_gain(snd_musica_menu, 0, 0.02);
+audio_stop_sound(snd_musica_menu);

@@ -14,7 +14,7 @@ dialogos = [
     { nombre: "Polo",        sprite: spr_per_1,  texto: "Chicha, podemos volver, me parece mejor." },
     { nombre: "Chicharroon", sprite: chichapng,   texto: "Si volvemos ahora Ribs no va a estar nada feliz." },
     { nombre: "Polo",        sprite: spr_per_1,  texto: "Pero…" },
-    { nombre: "",            sprite: SpriteVacio,         texto: "(Namdo muere)" },
+    { nombre: "",            sprite: SpriteVacio,         texto: "" },
     { nombre: "Polo",        sprite: spr_per_1,  texto: "Chicharron-" },
     { nombre: "Chicharron", sprite: chichapng,   texto: "Ah…" },
     { nombre: "Chicharron", sprite: chichapng,   texto: "Solo puedo mirar hacia delante." },

@@ -45,9 +45,10 @@ if (!esperando_input) {
 					 var ex_x = room_width/2 - 300;
 					var ex_y = room_height/2 - 300;
 					instance_create_layer(ex_x, ex_y, "Instances", Explosion_1);
+					instance_create_layer(ex_x -325, ex_y -100, "Instances", AnimacionMuerteNamdo);
 
     // play its sound once
-    audio_play_sound(muerenamdo, 1, false);
+    audio_play_sound(New_Project, 1, false);
 }
             } else {
 				fade_out=true;
