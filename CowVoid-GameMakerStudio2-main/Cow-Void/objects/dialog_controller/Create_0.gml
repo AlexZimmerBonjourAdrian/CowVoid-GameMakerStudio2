@@ -7,7 +7,7 @@ alarm[0] = room_speed * fade_speed + 1;
 // Diálogos
 dialogos = [
     {nombre: "Ribs", sprite: ribs1, texto: "Escuchen, ustedes tres tienen una mision en Kepler-90"},
-    {nombre: "Namdo", sprite: spr_per_2, texto: "¿Comandante, ese lugar no es demasiado hostil para nosotros?"},
+    {nombre: "Namdo", sprite: spr_per_2, texto: "Creo que ese lugar es demasiado hostil para nosotros"},
     {nombre: "Ribs", sprite: ribs1, texto: "Si no es ustedes tendremos que forzar a alguien mas."},
     {nombre: "Ribs", sprite: ribs1, texto: "Solo queremos una investigacion sobre los oscuros."},
     {nombre: "Ribs", sprite: ribs1, texto: "Tienen suerte, van a un lugar conocido, el planeta H."},
