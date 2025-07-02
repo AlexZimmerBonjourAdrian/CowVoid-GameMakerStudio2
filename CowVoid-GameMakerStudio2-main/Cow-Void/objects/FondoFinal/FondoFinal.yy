@@ -1,16 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"menu_config_music_controller",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"FondoFinal",
+  "eventList":[],
   "managed":true,
-  "name":"menu_config_music_controller",
+  "name":"FondoFinal",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menu",
-    "path":"folders/Objetos/Menu.yy",
+    "name":"Objetos",
+    "path":"folders/Objetos.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Sprite332",
+    "path":"sprites/Sprite332/Sprite332.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

@@ -1,16 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"menu_config_music_controller",
+  "%Name":"dialog_controller2",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"menu_config_music_controller",
+  "name":"dialog_controller2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Menu",
-    "path":"folders/Objetos/Menu.yy",
+    "name":"Dialogs",
+    "path":"folders/Objetos/Dialogs.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,5 +33,5 @@
   "solid":false,
   "spriteId":null,
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }
