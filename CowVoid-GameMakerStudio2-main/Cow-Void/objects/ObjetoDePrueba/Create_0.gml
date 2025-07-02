@@ -23,8 +23,8 @@ dialogos = [
     { nombre: "Polo",        sprite: spr_per_1,  texto: "Entendido." }
 ];
 
-// Estado del diálogo
-dialogo_actual = 0;
+global.dialogo_actual    = 0;
+global.explosion_spawned = false;
 texto_mostrado = "";
 char_index = 0;
 dialogo_terminado = false;

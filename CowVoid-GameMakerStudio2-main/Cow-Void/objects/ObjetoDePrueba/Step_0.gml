@@ -1,6 +1,7 @@
 // Evitar acceder fuera de rango
-if (dialogo_actual < array_length(dialogos)) {
-    var d = dialogos[dialogo_actual];
+if (global.dialogo_actual < array_length(dialogos)) {
+    var d = dialogos[global.dialogo_actual];
+	
 } else {
     exit;
 }
@@ -31,11 +32,23 @@ if (!esperando_input) {
         if (dialogo_terminado) {
             contador_transicion++;
         } else {
-            if (dialogo_actual < array_length(dialogos) - 1) {
-                dialogo_actual++;
+            if (global.dialogo_actual < array_length(dialogos) - 1) {
+                global.dialogo_actual++;
                 char_index = 0;
                 texto_mostrado = "";
                 esperando_input = false;
+				var idx_death = 8;
+				if (!global.explosion_spawned && global.dialogo_actual == idx_death) {
+					 global.explosion_spawned = true;
+
+				 // spawn the explosion effect at whatever coords you like:
+					 var ex_x = room_width/2 - 300;
+					var ex_y = room_height/2 - 300;
+					instance_create_layer(ex_x, ex_y, "Instances", Explosion_1);
+
+    // play its sound once
+    audio_play_sound(muerenamdo, 1, false);
+}
             } else {
 				fade_out=true;
 

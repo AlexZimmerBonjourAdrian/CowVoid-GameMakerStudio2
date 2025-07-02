@@ -15,7 +15,7 @@ draw_set_color(c_black);
 draw_rectangle(box_x, box_y, box_x + box_w, box_y + box_h, false); // fondo negro
 
 // Sprite personaje
-var spr = dialogos[dialogo_actual].sprite;
+var spr = dialogos[global.dialogo_actual].sprite;
 draw_sprite(spr, 0, box_x + 8, box_y + 8);
 
 // Texto
@@ -24,4 +24,4 @@ draw_text(box_x + 120, box_y + 16, texto_mostrado);
 
 // Nombre
 draw_set_color(c_white);
-draw_text(box_x + 120, box_y, dialogos[dialogo_actual].nombre);
+draw_text(box_x + 120, box_y, dialogos[global.dialogo_actual].nombre);
