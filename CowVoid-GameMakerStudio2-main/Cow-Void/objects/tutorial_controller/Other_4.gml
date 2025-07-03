@@ -1,0 +1,1 @@
+//global.musica_id = audio_play_sound(snd_Primer_aventura, 1, true);

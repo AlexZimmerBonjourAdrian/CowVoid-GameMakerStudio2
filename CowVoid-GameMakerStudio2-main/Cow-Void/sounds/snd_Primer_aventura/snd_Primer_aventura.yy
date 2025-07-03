@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"snd_Primer_aventura",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":88.0,
+  "name":"snd_Primer_aventura",
+  "parent":{
+    "name":"MP3",
+    "path":"folders/Audio/Music/MP3.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_Primer_aventura.mp3",
+  "type":0,
+  "volume":1.0,
+}
