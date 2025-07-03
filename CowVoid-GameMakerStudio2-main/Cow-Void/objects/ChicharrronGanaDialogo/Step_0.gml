@@ -62,5 +62,6 @@ if(fade_out){
 		
 }
 audio_stop_sound(snd_musica_dialog);
+audio_stop_sound(snd_Muerte);
 audio_sound_gain(snd_musica_menu, 0, 0.02);
 audio_stop_sound(snd_musica_menu);

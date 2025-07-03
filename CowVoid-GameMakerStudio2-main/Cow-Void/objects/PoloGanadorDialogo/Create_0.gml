@@ -3,7 +3,7 @@ var fade_speed = 0.02;
 var snd = snd_musica_menu;
 audio_sound_gain(snd, 0, fade_speed);
 alarm[0] = room_speed * fade_speed + 1;
-
+audio_stop_sound(snd_Muerte);
 // Diálogos
 dialogos = [
     { nombre: "", sprite: SpriteVacio, texto: "" },

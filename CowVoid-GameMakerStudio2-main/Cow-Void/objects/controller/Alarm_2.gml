@@ -10,11 +10,11 @@ if (player1_exists || player2_exists) {
     } else if (player1_exists) {
         target = obj_player_1_polo;
 		
-		room_goto(GanaPolo);
+		room_goto(MuerteChicharron);
     } else {
         target = obj_player_2_chicharron;
 		
-		room_goto(GanaChicha);
+		room_goto(MuertePolo);
     }
     
     if (target != noone) {

@@ -58,10 +58,8 @@ if (!esperando_input) {
     }
 }
 if(fade_out){
-	room_goto(Creditos);
-		
+	room_goto(GanaChicha);
 }
-audio_stop_sound(snd_Muerte);
 audio_stop_sound(snd_musica_dialog);
 audio_sound_gain(snd_musica_menu, 0, 0.02);
 audio_stop_sound(snd_musica_menu);
