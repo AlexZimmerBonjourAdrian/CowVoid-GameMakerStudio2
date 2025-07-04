@@ -21,3 +21,4 @@ for (var i = 0; i < 3; i++) {
 		barrera.image_yscale = 3;
 		barrera.owner = id;
 }
+

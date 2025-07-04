@@ -1,10 +1,25 @@
-// Config
 ini_open("config.ini");
 
 var fullscreen_val = ini_read_real("video", "fullscreen", 0);
 window_set_fullscreen(fullscreen_val == 1);
 
+global.modoMuerteSubitaDuel = false;
 global.music_volume = ini_read_real("audio", "music_volume", 0.5);
+
+
+if (room == Duel){
+    global.inicioPelea = false;
+    global.countdown = room_speed * 3;
+    global.modoDuel = true;
+} else if (room == PvP){
+    global.inicioPelea = true; 
+    global.modoDuel = false;
+}
+
+global.modoDuel = true
+global.inicioPelea = false;
+global.countdown = room_speed * 3;
+
 audio_master_gain(global.music_volume);
 
 ini_close();

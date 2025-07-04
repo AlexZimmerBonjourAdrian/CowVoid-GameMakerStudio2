@@ -1,9 +1,15 @@
+if (room == Duel && !global.inicioPelea) {
+    return;
+}
+
 // Movimiento con flechas direccionales (en lugar de WASD)
 var pressed_left = keyboard_check(vk_left);  // ←
 var pressed_right = keyboard_check(vk_right); // →
 var xdirection = pressed_right - pressed_left;
 var move_speed = 30;
 x = x + (xdirection * move_speed);
+
+
 
 
 
@@ -17,8 +23,11 @@ if (damaged) {
 
 if (invulnerable) {
     invul_timer -= 1;
+	image_blend = make_color_rgb(100, 100, 100);
+	
     if (invul_timer <= 0) {
         invulnerable = false;
+		image_blend = c_white;
     }
 }
 
@@ -65,4 +74,11 @@ if (x > room_width) {
 // Si sale por la izquierda, aparece por la derecha
 else if (x < 0) {
     x = room_width;
+}
+
+
+if(global.modoMuerteSubitaDuel) {
+	escudo_activado = false;
+	vidas = 1;
+	escudos = 0;
 }

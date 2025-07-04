@@ -1,9 +1,15 @@
+if (room == Duel && !global.inicioPelea) {
+    return;
+}
+
 // Movimiento de la nave (tu código original)
 var pressed_left = keyboard_check(ord("A"));
 var pressed_right = keyboard_check(ord("D"));
 var xdirection = pressed_right - pressed_left;
 var move_speed = 30;
 x = x + (xdirection * move_speed);
+
+
 
 if (damaged) {
     timer_dmg -= 1;
@@ -15,8 +21,11 @@ if (damaged) {
 
 if (invulnerable) {
     invul_timer -= 1;
+	image_blend = make_color_rgb(100, 100, 100);
+	
     if (invul_timer <= 0) {
         invulnerable = false;
+		image_blend = c_white
     }
 }
 
@@ -60,4 +69,11 @@ if (x > room_width) {
 // Si sale por la izquierda, aparece por la derecha
 else if (x < 0) {
     x = room_width;
+}
+
+
+if(global.modoMuerteSubitaDuel) {
+	escudo_activado = false;
+	vidas = 1;
+	escudos = 0;
 }

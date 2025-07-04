@@ -8,6 +8,7 @@ if (instance_exists(obj_player_1_polo)) {
 	
 
     var texto = "Escudos: " + string(obj_player_1_polo.escudos);
-    draw_text(32, display_get_gui_height() - 90, texto);
+	
+   draw_text(32, display_get_gui_height() - 90, texto);
 }
 

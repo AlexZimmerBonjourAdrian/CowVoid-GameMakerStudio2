@@ -15,3 +15,10 @@ if (random(45) < 1) {
 audio_stop_sound(snd_musica_dialog);
 audio_sound_gain(snd_musica_menu, 0, 0.02);
 audio_stop_sound(snd_musica_menu);
+
+if (room == Duel && !global.inicioPelea) {
+    global.countdown -= 1;
+    if (global.countdown <= 0) {
+        global.inicioPelea = true; // ✅ Ya pueden pelear
+    }
+}
