@@ -8,8 +8,6 @@ escudos = 3;
 escudo_activado = false;
 escudo_timer = 0;
 
-
-
 var barrera_espaciado = 300;
 var barrera_y = y + 150;
 

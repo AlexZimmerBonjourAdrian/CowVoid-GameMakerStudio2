@@ -39,7 +39,7 @@ if (keyboard_check_pressed(ord("E"))) {
     escudos -= 1;
     escudo_timer = 300; 
 
-    var escudo = instance_create_layer(x, y, "Instances", Escudo);
+    var escudo = instance_create_layer(x, y, "Instances", EscudoPoloTutorial);
 	escudo.sprite_index = EscudoPolo;
     escudo.owner = id;
 }

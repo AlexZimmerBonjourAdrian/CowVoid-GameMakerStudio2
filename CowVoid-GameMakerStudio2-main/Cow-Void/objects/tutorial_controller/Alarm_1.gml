@@ -1,11 +1,5 @@
-// CREAR ASTEROIDES
-
-// Lado izquierdo o derecho
-//var spawn_side = choose(0, 1);
-//var x_pos = spawn_side == 0 ? -sprite_width : room_width + sprite_width;
-//var y_pos = random(room_height);
-
-//instance_create_layer(spawn_side, y_pos, "Instances", Meteorite);
-
-// Repetir cada 1-3 segundos
-//alarm[1] = irandom_range(room_speed * 1, room_speed * 3);
+var ex = random_range(0, room_width);
+var e = instance_create_layer(ex, -sprite_height, "Instances", objNaveAlien1);
+e.pop_target_y = irandom_range(32, room_height/4);
+e.pop_speed    = 8;
+alarm[1] = room_speed * irandom_range(7, 12);
