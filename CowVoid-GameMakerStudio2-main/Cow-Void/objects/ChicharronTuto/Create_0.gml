@@ -1,7 +1,7 @@
 image_blend = c_white;
 damaged = false;
 timer_dmg = 0;
-vidas = 3;
+vidas = 5;
 invulnerable = false;
 invul_timer = 0;
 escudos = 3;

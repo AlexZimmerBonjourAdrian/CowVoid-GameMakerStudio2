@@ -1,9 +1,18 @@
-// Movimiento de la nave (tu código original)
-var pressed_left = keyboard_check(ord("A"));
+
+var pressed_left  = keyboard_check(ord("A"));  
 var pressed_right = keyboard_check(ord("D"));
-var xdirection = pressed_right - pressed_left;
-var move_speed = 30;
-x = x + (xdirection * move_speed);
+var xdirection    = pressed_right - pressed_left;
+var pressed_up    = keyboard_check(ord("W"));
+var pressed_down  = keyboard_check(ord("S"));
+var ydirection    = pressed_down - pressed_up;
+
+// unified move speed
+var move_speed = 11;
+
+
+x += xdirection * move_speed;
+y += ydirection * move_speed;
+
 
 if (damaged) {
     timer_dmg -= 1;
@@ -60,3 +69,5 @@ if (x > room_width) {
 else if (x < 0) {
     x = room_width;
 }
+if (y > room_height) y = 0;
+else if (y < 0)      y = room_height;

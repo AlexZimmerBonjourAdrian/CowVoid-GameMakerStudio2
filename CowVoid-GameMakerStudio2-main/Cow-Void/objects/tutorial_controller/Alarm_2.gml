@@ -1,18 +1,18 @@
 // AGUJERO DE GUSANO
 
-var player1_exists = instance_exists(obj_player_1_polo);
-var player2_exists = instance_exists(obj_player_2_chicharron);
+var player1_exists = instance_exists(PoloTuto);
+var player2_exists = instance_exists(ChicharronTuto);
 
 if (player1_exists || player2_exists) {
     var target = noone;
     if (player1_exists && player2_exists) {
-        target = choose(obj_player_1_polo, obj_player_2_chicharron);
+        target = choose(PoloTuto, ChicharronTuto);
     } else if (player1_exists) {
-        target = obj_player_1_polo;
+        target = PoloTuto;
 		
 		room_goto(GanaPolo);
     } else {
-        target = obj_player_2_chicharron;
+        target = ChicharronTuto;
 		
 		room_goto(GanaChicha);
     }

@@ -1,9 +1,17 @@
-// Movimiento con flechas direccionales (en lugar de WASD)
-var pressed_left = keyboard_check(vk_left);  // ←
-var pressed_right = keyboard_check(vk_right); // →
-var xdirection = pressed_right - pressed_left;
-var move_speed = 30;
-x = x + (xdirection * move_speed);
+
+var pressed_left  = keyboard_check(vk_left);  
+var pressed_right = keyboard_check(vk_right);
+var xdirection    = pressed_right - pressed_left;
+var pressed_up    = keyboard_check(vk_up);
+var pressed_down  = keyboard_check(vk_down);
+var ydirection    = pressed_down - pressed_up;
+
+// unified move speed
+var move_speed = 11;
+
+
+x += xdirection * move_speed;
+y += ydirection * move_speed;
 
 
 
@@ -34,7 +42,7 @@ if (keyboard_check_pressed(ord("O"))) {
     escudos -= 1;
     escudo_timer = 300; 
 
-    var escudo = instance_create_layer(x, y, "Instances", Escudo);
+    var escudo = instance_create_layer(x+90, y+90, "Instances", EscudoChicharronTutorial);
     escudo.owner = id;
 	escudo.sprite_index = EscudoChicharron
 }
@@ -65,3 +73,5 @@ if (x > room_width) {
 else if (x < 0) {
     x = room_width;
 }
+if (y > room_height) y = 0;
+else if (y < 0)      y = room_height;

@@ -1,9 +1,15 @@
 // Config
+
+//CONTADOR PARA FINALIZAR EL JUEGO
+alarm[6] = room_speed * 30 * 5; 
+
+
 ini_open("config.ini");
 
 var fullscreen_val = ini_read_real("video", "fullscreen", 0);
 window_set_fullscreen(fullscreen_val == 1);
-
+game_over    = false;
+target_room  = noone;
 global.music_volume = ini_read_real("audio", "music_volume", 0.5);
 audio_master_gain(global.music_volume);
 
@@ -28,8 +34,6 @@ with (instance_create_layer(room_width/2 + 80,room_height - sprite_height/2 - 20
     image_xscale = 0.5;
     image_yscale = 0.5;};
 
-alarm[0] = room_speed * 2; // BIENVENIDA
-
 bienvenida = false;
 bienvenida_a_mostrar = "";
 titulo = false;
@@ -38,8 +42,6 @@ descripcion = false;
 descripcion_a_mostrar = "";
 tiempo_texto = 0;
 
-//alarm[0] = room_speed * 2; // GUSANOS
-alarm[1] = room_speed * 2; // ASTEROIDES
-alarm[2] = room_speed * 2; // AGUJERO DE GUSANO
-// CREAR GUSANOS
+alarm[1] = room_speed * 2; 
+alarm[7] = room_speed * 15;
 
