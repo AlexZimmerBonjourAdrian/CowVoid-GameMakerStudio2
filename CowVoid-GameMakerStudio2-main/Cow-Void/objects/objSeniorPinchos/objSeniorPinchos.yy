@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Seniorpinchos",
-    "path":"sprites/Seniorpinchos/Seniorpinchos.yy",
+    "name":"Gusano_1",
+    "path":"sprites/Gusano_1/Gusano_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,
