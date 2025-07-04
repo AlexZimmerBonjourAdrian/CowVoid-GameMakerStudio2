@@ -1,13 +1,17 @@
 {
   "$GMObject":"",
   "%Name":"objNaveAlien1",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Bullet","path":"objects/Bullet/Bullet.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"objNaveAlien1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Tutorial",
+    "path":"folders/Objetos/Tutorial.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -28,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"EnemyShip1_Upgraded",
-    "path":"sprites/EnemyShip1_Upgraded/EnemyShip1_Upgraded.yy",
+    "name":"EnemyShip_upanimated",
+    "path":"sprites/EnemyShip_upanimated/EnemyShip_upanimated.yy",
   },
   "spriteMaskId":null,
   "visible":true,

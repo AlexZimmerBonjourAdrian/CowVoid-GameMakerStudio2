@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"Object67",
-  "eventList":[],
+  "%Name":"EscudoPoloTutorial",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"Object67",
+  "name":"EscudoPoloTutorial",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Tutorial",
+    "path":"folders/Objetos/Tutorial.yy",
   },
   "parentObjectId":null,
   "persistent":false,

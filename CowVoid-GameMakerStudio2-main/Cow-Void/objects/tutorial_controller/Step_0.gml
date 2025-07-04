@@ -7,8 +7,7 @@ if (bienvenida || titulo || descripcion) {
 
     }
 }
-if (random(45) < 1) {
-    // 1) Spawn at top edge:
+if (random(65) < 1) {
     var meteor = instance_create_layer(
         irandom(room_width),
         0,
@@ -20,9 +19,18 @@ if (random(45) < 1) {
     meteor.speed     = random_range(1, 3);  
     meteor.rotation_speed = random_range(-3, 3);
 }
-
-alarm[1] = room_speed * 2;
-alarm[2] = room_speed * 2;
+if (random(300) < 1) {
+    var mina = instance_create_layer(
+        irandom(room_width),
+        0,
+        "Instances", 
+        MinaEspacial
+    );
+    
+    mina.direction = 270;                 
+    mina.speed     = random_range(1, 2);  
+    mina.rotation_speed = random_range(-2, 2);
+}
 
 audio_sound_gain(snd_musica_menu, 0, 0.02);
 audio_stop_sound(snd_musica_menu);
