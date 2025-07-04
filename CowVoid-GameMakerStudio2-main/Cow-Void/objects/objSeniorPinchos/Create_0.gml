@@ -1,4 +1,4 @@
-sprite_index = Seniorpinchos;
+sprite_index = Gusano_1;
 
 if (variable_instance_exists(id, "randomSpawn") && randomSpawn) {
     // ———— RANDOM SPAWN BRANCH ————
@@ -13,7 +13,7 @@ if (variable_instance_exists(id, "randomSpawn") && randomSpawn) {
 
 } else {
 
-    y = room_height - 90 + sprite_get_bbox_bottom(Seniorpinchos)/2;
+    y = room_height - 90 + sprite_get_bbox_bottom(Gusano_1)/2;
 
     gravity = 0.5;
 
