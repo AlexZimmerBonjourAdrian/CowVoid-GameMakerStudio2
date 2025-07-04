@@ -393,8 +393,6 @@
     {"id":{"name":"Explosion9","path":"sprites/Explosion9/Explosion9.yy",},},
     {"id":{"name":"fondo__2_","path":"sprites/fondo__2_/fondo__2_.yy",},},
     {"id":{"name":"Game_MainMenu","path":"sprites/Game_MainMenu/Game_MainMenu.yy",},},
-    {"id":{"name":"Gusano_1","path":"sprites/Gusano_1/Gusano_1.yy",},},
-    {"id":{"name":"Gusano_2","path":"sprites/Gusano_2/Gusano_2.yy",},},
     {"id":{"name":"Main_Background","path":"sprites/Main_Background/Main_Background.yy",},},
     {"id":{"name":"meteorBrown_big1","path":"sprites/meteorBrown_big1/meteorBrown_big1.yy",},},
     {"id":{"name":"meteorBrown_big2","path":"sprites/meteorBrown_big2/meteorBrown_big2.yy",},},
