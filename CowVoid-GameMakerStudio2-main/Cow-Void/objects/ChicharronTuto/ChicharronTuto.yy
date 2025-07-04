@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite347",
-    "path":"sprites/Sprite347/Sprite347.yy",
+    "name":"sprite_chicharron_chiquito",
+    "path":"sprites/sprite_chicharron_chiquito/sprite_chicharron_chiquito.yy",
   },
   "spriteMaskId":null,
   "visible":true,

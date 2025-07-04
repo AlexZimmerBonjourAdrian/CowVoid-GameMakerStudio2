@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player_1_polo",
-    "path":"sprites/spr_player_1_polo/spr_player_1_polo.yy",
+    "name":"sprite_polo_chiquito",
+    "path":"sprites/sprite_polo_chiquito/sprite_polo_chiquito.yy",
   },
   "spriteMaskId":null,
   "visible":true,

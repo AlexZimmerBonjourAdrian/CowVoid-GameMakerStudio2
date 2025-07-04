@@ -45,13 +45,27 @@ if (keyboard_check_pressed(ord("E"))) {
 }
 
 var center_x = -70 + x + sprite_width * 0.5;
-if (keyboard_check_pressed(vk_space)) {
-    var bullet = instance_create_layer(center_x, (y-40), "Instances", Bullet);
-	bullet.owner     = id;
-	bullet.direction = 90;
-	bullet.speed     = 20;
-
+if (shot_cooldown_timer > 0) {
+    shot_cooldown_timer -= 1;
+    if (shot_cooldown_timer <= 0) {
+        shot_count = 0;
+    }
 }
+
+
+if (keyboard_check_pressed(vk_space) && shot_count < 3 && shot_cooldown_timer <= 0) {
+    var center_x = -70 + x + sprite_width * 0.5;
+    var bullet   = instance_create_layer(center_x, y-40, "Instances", Bullet);
+    bullet.owner     = id;
+    bullet.direction = 90;
+    bullet.speed     = 20;
+    
+    shot_count += 1;
+    if (shot_count >= 3) {
+        shot_cooldown_timer = shot_cooldown_duration;
+    }
+}
+
 
 if (escudo_activado) {
     escudo_timer -= 1;
@@ -65,7 +79,7 @@ if (escudo_activado) {
 if (x > room_width) {
     x = 0;
 }
-// Si sale por la izquierda, aparece por la derecha
+
 else if (x < 0) {
     x = room_width;
 }
