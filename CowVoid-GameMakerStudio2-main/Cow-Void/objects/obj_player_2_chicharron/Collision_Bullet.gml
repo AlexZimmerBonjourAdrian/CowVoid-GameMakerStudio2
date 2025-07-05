@@ -5,6 +5,7 @@ if(!other.nodmg && !invulnerable) {
 	global.player2_lives = vidas;
 	if (vidas <= 0) {
 		global.player2_alive = false;
+		room_goto(MuerteChicharron);
 	}
 	
 	invulnerable = true;

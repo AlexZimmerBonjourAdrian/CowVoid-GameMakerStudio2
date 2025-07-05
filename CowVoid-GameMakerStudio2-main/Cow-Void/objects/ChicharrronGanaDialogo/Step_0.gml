@@ -58,7 +58,7 @@ if (!esperando_input) {
     }
 }
 if(fade_out){
-	room_goto(Creditos);
+	room_goto(FinalPVP);
 		
 }
 audio_stop_sound(snd_musica_dialog);

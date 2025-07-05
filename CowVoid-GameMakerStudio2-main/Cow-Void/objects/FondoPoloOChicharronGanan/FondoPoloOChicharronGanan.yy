@@ -28,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite344",
-    "path":"sprites/Sprite344/Sprite344.yy",
+    "name":"background_dialog_1",
+    "path":"sprites/background_dialog_1/background_dialog_1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

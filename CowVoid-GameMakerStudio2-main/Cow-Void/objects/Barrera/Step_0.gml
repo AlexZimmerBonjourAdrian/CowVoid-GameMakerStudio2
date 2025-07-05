@@ -8,3 +8,7 @@ if(damaged) {
 	}	
 	
 }
+
+if(global.modoMuerteSubitaDuel) {
+	instance_destroy();
+}

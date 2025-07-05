@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite289",
-    "path":"sprites/Sprite289/Sprite289.yy",
+    "name":"spr_slider_vol",
+    "path":"sprites/spr_slider_vol/spr_slider_vol.yy",
   },
   "spriteMaskId":null,
   "visible":true,
