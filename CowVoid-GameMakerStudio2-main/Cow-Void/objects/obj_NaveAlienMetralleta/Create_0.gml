@@ -22,4 +22,7 @@ shot_count             = 0;
 shot_cooldown_timer    = 0.2;
 shot_cooldown_duration = ceil(room_speed * 0.1);
 
+lock = false;
+alarm[2] = room_speed * 1; 
+
 image_speed = 0.2;

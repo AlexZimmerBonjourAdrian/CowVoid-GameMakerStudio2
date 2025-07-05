@@ -42,10 +42,12 @@ descripcion = false;
 descripcion_a_mostrar = "";
 tiempo_texto = 0;
 
+pinchitosjumpiness = false;
 alarm[9] = room_speed * 1 + random (3); // ALARM METEORITO
-
 alarm[10] = room_speed *(1 + random(5));  //ALARM MINA ESPACIAL
 alarm[1] = room_speed * (20 + random(8)) ; // NAVE ALIEN SOLDADO
-alarm[7] = room_speed * (5 + random(8)); // PINCHITO
+alarm[7] = room_speed * (1 + random(8)); // PINCHITO
 alarm[11] = room_speed *(20 + random(10)); // ALIEN KAMI
 alarm[8] = room_speed * 50; //METRALLETA
+
+finalizando=false;

@@ -1,5 +1,5 @@
 // AGUJERO DE GUSANO
-
+if(!finalizando){
 var player1_exists = instance_exists(PoloTuto);
 var player2_exists = instance_exists(ChicharronTuto);
 
@@ -26,3 +26,4 @@ if (player1_exists || player2_exists) {
 }
 
 alarm[2] = irandom_range(180, 300); // cada 3-5 segundos
+}

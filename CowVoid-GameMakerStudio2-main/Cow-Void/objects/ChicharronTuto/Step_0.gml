@@ -68,14 +68,14 @@ if (shot_cooldown_timer > 0) {
     }
 }
 */
-if (keyboard_check_pressed(vk_enter) && shot_count < 3 && shot_cooldown_timer <= 0) {
+if (keyboard_check_pressed(vk_enter) && shot_count < 4 && shot_cooldown_timer <= 0) {
     var bullet = instance_create_layer(center_x - 45 , y - 45, "Instances", Bullet);
 		audio_play_sound(SFX_Turret_Laser_Upgraded1, 1, false, 0.3);
 	bullet.owner     = id;
 	bullet.direction = 90;
 	bullet.speed     = 20;
     shot_count += 1;
-    if (shot_count >= 3) {
+    if (shot_count >= 4) {
         shot_cooldown_timer = shot_cooldown_duration;
     }
 }

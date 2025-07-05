@@ -71,7 +71,7 @@ if (shot_cooldown_timer > 0) {
     shot_cooldown_timer -= 1;
     if (shot_cooldown_timer <= 0) shot_count = 0;
 }
-if (target != noone && shot_count < 5 && shot_cooldown_timer <= 0) {
+if (target != noone && shot_count < 5 && shot_cooldown_timer <= 0 && !lock) {
     var bx = x + sprite_width*0.5 -125;
     var by = y + sprite_height*0.5-100;
     var b  = instance_create_layer(bx, by, "Instances", BulletAlien);
@@ -79,7 +79,7 @@ if (target != noone && shot_count < 5 && shot_cooldown_timer <= 0) {
     b.direction = point_direction(x, y, target.x, target.y);
     b.speed     = 6;
     shot_count += 1;
-    if (shot_count >= 3) shot_cooldown_timer = shot_cooldown_duration;
+    if (shot_count >= 2) shot_cooldown_timer = shot_cooldown_duration;
 }
 
 // 8) Damage flash & invulnerability timers

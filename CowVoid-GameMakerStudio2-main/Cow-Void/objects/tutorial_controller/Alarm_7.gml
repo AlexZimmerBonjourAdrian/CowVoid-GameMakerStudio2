@@ -1,12 +1,22 @@
+if (!finalizando) {
+    // 1) spawn the warning marker
+    var warnX = random_range(0, room_width);
+    var warnY = room_height - 96;
+    var w = instance_create_layer(warnX, warnY, "Instances", obj_saltogusano);
+    with (w) {
+        blink_timer    = 0;
+        blink_duration = room_speed * 2;
+        spawnX         = warnX;
+        alarm[0]       = blink_duration;
+    }
 
-var warnX = random_range(0, room_width);
+    pinchitosJumpiness = (random(1) < 0.4);
 
-var warnY = room_height - 96;
+    if (pinchitosJumpiness) {
 
+        alarm[7] = room_speed * random_range(0, 3);
+    } else {
 
-var w = instance_create_layer(warnX, warnY, "Instances", obj_saltogusano);
-w.blink_timer    = 0;
-w.blink_duration = room_speed * 2; 
-w.spawnX         = warnX;
-w.alarm[0]       = w.blink_duration;
-alarm[7] = room_speed * (2 + random(11));
+        alarm[7] = room_speed * random_range(7, 12);
+    }
+}
