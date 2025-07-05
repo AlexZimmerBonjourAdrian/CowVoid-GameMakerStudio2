@@ -13,8 +13,8 @@
   "name":"credits",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Creditos",
+    "path":"folders/Objetos/Creditos.yy",
   },
   "parentObjectId":null,
   "persistent":false,

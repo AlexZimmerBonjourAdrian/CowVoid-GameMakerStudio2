@@ -1,7 +1,7 @@
     var meteor = instance_create_layer(
         irandom(room_width),
         0,
-        "Instances_2", 
+        "Instances", 
         MeteoritoTutorial
     );
     meteor.image_xscale = 0.7;
