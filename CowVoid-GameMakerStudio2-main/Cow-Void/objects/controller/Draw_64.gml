@@ -15,3 +15,4 @@ if (!global.inicioPelea && room == Duel) {
     draw_text(display_get_gui_width()/2, display_get_gui_height()/2, texto);
 	draw_set_font(-1);
 }
+

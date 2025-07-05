@@ -11,6 +11,9 @@ if (room == Duel){
     global.inicioPelea = false;
     global.countdown = room_speed * 3;
     global.modoDuel = true;
+	global.hayGanador = false;
+	global.ganadorEs = noone;
+	global.hayEmpate = false;
 } else if (room == PvP){
     global.inicioPelea = true; 
     global.modoDuel = false;
@@ -19,6 +22,8 @@ if (room == Duel){
 global.modoDuel = true
 global.inicioPelea = false;
 global.countdown = room_speed * 3;
+
+
 
 audio_master_gain(global.music_volume);
 

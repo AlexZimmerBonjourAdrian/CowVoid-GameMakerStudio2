@@ -23,6 +23,25 @@ if (room == Duel && !global.inicioPelea) {
     }
 }
 
+if(room == Duel) {
+	if(!instance_exists(obj_player_1_polo) && !instance_exists(obj_player_2_chicharron)) {
+		global.hayEmpate = true;
+		global.hayGanador = false;
+		global.ganadorEs = obj_player_1_polo;
+		room_goto(FinalDuel);
+	} else if(!instance_exists(obj_player_1_polo) && instance_exists(obj_player_2_chicharron)) {
+		global.hayEmpate = false;
+		global.hayGanador = true;
+		global.ganadorEs = obj_player_2_chicharron;
+		room_goto(FinalDuel);
+	} else if(instance_exists(obj_player_1_polo) && !instance_exists(obj_player_2_chicharron)) {
+		global.hayEmpate = false;
+		global.hayGanador = true;
+		global.ganadorEs = obj_player_1_polo;
+		room_goto(FinalDuel);
+	}
+}
+
 if(global.modoMuerteSubitaDuel) {
 	with(Barrera) {
 		instance_destroy();
