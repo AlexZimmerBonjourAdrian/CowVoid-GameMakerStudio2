@@ -19,6 +19,13 @@ audio_stop_sound(snd_musica_menu);
 if (room == Duel && !global.inicioPelea) {
     global.countdown -= 1;
     if (global.countdown <= 0) {
-        global.inicioPelea = true; // ✅ Ya pueden pelear
+        global.inicioPelea = true;
     }
+}
+
+if(global.modoMuerteSubitaDuel) {
+	with(Barrera) {
+		instance_destroy();
+	
+	}
 }
