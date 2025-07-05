@@ -18,18 +18,4 @@ audio_master_gain(global.music_volume);
 
 ini_close();
 
-opcion_actual = 0;
-
-if (keyboard_check_pressed(vk_down)) {
-    opcion_actual++;
-}
-if (keyboard_check_pressed(vk_up)) {
-    opcion_actual--;
-}
-if (keyboard_check_pressed(vk_enter)) {
-    if (opcion_actual == 0) room_goto(rm_nivel_1);
-}
-
-if (keyboard_check_pressed(vk_enter)) {
-    if (opcion_actual == 1) game_end();;
-}
+global.ultima_room_jugada = noone;

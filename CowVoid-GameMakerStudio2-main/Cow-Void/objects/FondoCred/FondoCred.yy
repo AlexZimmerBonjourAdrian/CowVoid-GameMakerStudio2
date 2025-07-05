@@ -8,8 +8,8 @@
   "name":"FondoCred",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Creditos",
+    "path":"folders/Objetos/Creditos.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite342",
-    "path":"sprites/Sprite342/Sprite342.yy",
+    "name":"background_creditos",
+    "path":"sprites/background_creditos/background_creditos.yy",
   },
   "spriteMaskId":null,
   "visible":true,

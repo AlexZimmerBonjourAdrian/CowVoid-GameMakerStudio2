@@ -5,6 +5,7 @@ if(!other.nodmg && !invulnerable) {
 	global.player1_lives = vidas;
 	if (vidas <= 0) {
 		global.player1_alive = false;
+		global.ultima_room_jugada = PvP;
 		room_goto(MuertePolo);
 	}
 	

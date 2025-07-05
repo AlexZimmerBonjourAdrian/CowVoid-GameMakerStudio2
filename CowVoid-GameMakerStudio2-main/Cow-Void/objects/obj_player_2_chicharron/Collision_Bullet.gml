@@ -5,6 +5,7 @@ if(!other.nodmg && !invulnerable) {
 	global.player2_lives = vidas;
 	if (vidas <= 0) {
 		global.player2_alive = false;
+		global.ultima_room_jugada = PvP;
 		room_goto(MuerteChicharron);
 	}
 	

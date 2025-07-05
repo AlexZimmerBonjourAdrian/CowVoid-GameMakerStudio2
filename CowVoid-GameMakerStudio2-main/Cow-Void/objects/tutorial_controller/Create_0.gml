@@ -12,6 +12,7 @@ game_over    = false;
 target_room  = noone;
 global.music_volume = ini_read_real("audio", "music_volume", 0.5);
 audio_master_gain(global.music_volume);
+global.ultima_room_jugada = Tutorial;
 
 ini_close();
 

@@ -5,6 +5,7 @@ window_set_fullscreen(fullscreen_val == 1);
 
 global.modoMuerteSubitaDuel = false;
 global.music_volume = ini_read_real("audio", "music_volume", 0.5);
+global.ultima_room_jugada = PvP;
 
 
 if (room == Duel){
