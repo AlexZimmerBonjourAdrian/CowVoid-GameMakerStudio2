@@ -72,8 +72,8 @@ if (shot_cooldown_timer > 0) {
     if (shot_cooldown_timer <= 0) shot_count = 0;
 }
 if (target != noone && shot_count < 3 && shot_cooldown_timer <= 0) {
-    var bx = x + sprite_width*0.5 + 12;
-    var by = y + sprite_height*0.5;
+    var bx = x + sprite_width*0.5 -120;
+    var by = y + sprite_height*0.5 -100;
     var b  = instance_create_layer(bx, by, "Instances", BulletAlien);
     b.owner     = id;
     b.direction = point_direction(x, y, target.x, target.y);

@@ -1,7 +1,7 @@
 
 var warnX = random_range(0, room_width);
 
-var warnY = room_height - 64;
+var warnY = room_height - 96;
 
 
 var w = instance_create_layer(warnX, warnY, "Instances", obj_saltogusano);

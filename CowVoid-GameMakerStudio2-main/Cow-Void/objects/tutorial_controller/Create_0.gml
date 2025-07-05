@@ -1,7 +1,7 @@
 // Config
 
 //CONTADOR PARA FINALIZAR EL JUEGO
-alarm[6] = room_speed * 30 * 5; 
+alarm[6] = room_speed * 120; 
 
 
 ini_open("config.ini");
@@ -42,6 +42,11 @@ descripcion = false;
 descripcion_a_mostrar = "";
 tiempo_texto = 0;
 
-alarm[1] = room_speed * 2; 
-alarm[7] = room_speed * 15;
+//alarm[9] = room_speed * 0.5 + random (3);
+//alarm[10] = room_speed *(1+ random(10)); 
+//alarm[1] = room_speed * 25;
+//alarm[7] = room_speed * 15;
+//alarm[11] = room_speed * 20;
+alarm[8] = room_speed;
+
 

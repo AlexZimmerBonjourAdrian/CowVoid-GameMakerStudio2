@@ -54,7 +54,7 @@ if (shot_cooldown_timer > 0) {
 
 
 if (keyboard_check_pressed(vk_space) && shot_count < 3 && shot_cooldown_timer <= 0) {
-    var center_x = -70 + x + sprite_width * 0.5;
+    var center_x = -50 + x + sprite_width * 0.5;
     var bullet   = instance_create_layer(center_x, y-40, "Instances", Bullet);
     bullet.owner     = id;
     bullet.direction = 90;

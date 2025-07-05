@@ -38,8 +38,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sprite_chicharron_chiquito",
-    "path":"sprites/sprite_chicharron_chiquito/sprite_chicharron_chiquito.yy",
+    "name":"Sprite347",
+    "path":"sprites/Sprite347/Sprite347.yy",
   },
   "spriteMaskId":null,
   "visible":true,

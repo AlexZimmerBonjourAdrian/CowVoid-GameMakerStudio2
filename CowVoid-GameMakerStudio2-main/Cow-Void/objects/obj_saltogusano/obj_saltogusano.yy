@@ -9,8 +9,8 @@
   "name":"obj_saltogusano",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Tutorial",
+    "path":"folders/Objetos/Tutorial.yy",
   },
   "parentObjectId":null,
   "persistent":false,

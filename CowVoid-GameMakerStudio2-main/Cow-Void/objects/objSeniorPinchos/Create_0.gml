@@ -1,11 +1,8 @@
-sprite_index = Gusano_1;
+sprite_index = Seniorpinch;
 
 if (variable_instance_exists(id, "randomSpawn") && randomSpawn) {
-    // ———— RANDOM SPAWN BRANCH ————
-    // clear the flag so it doesn't run again
-    randomSpawn = false;
 
-    // prevent any “jump” logic:
+    randomSpawn = false;
     gravity = 0;
     vspeed  = 0;
 
@@ -13,7 +10,7 @@ if (variable_instance_exists(id, "randomSpawn") && randomSpawn) {
 
 } else {
 
-    y = room_height - 90 + sprite_get_bbox_bottom(Gusano_1)/2;
+    y = room_height - 90 + sprite_get_bbox_bottom(Seniorpinch)/2;
 
     gravity = 0.5;
 

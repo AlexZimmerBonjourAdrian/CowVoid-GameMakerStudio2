@@ -4,7 +4,7 @@ if (y <= targetY) {
     gravity = 0;
 }
 
-if (y > room_height + sprite_get_bbox_bottom(Gusano_1)/2) {
+if (y > room_height + sprite_get_bbox_bottom(Seniorpinch)/2) {
 	
     instance_destroy();
 	
