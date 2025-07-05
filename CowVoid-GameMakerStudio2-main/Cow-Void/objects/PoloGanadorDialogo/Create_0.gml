@@ -7,9 +7,9 @@ audio_stop_sound(snd_Muerte);
 // Diálogos
 dialogos = [
     { nombre: "", sprite: SpriteVacio, texto: "" },
-    { nombre: "Polo", sprite: spr_per_1, texto: "Comandante Ribs, hemos llegado al planeta objetivo" },
-    { nombre: "Polo", sprite: spr_per_1, texto: "Todos han muerto, es un lugar demasiado hostil" },
-	{ nombre: "Polo", sprite: spr_per_1, texto: "Deberíamos posponer indefinidamente una guerra con los oscuros." }
+    { nombre: "Polo", sprite: spr_polo, texto: "Comandante Ribs, hemos llegado al planeta objetivo" },
+    { nombre: "Polo", sprite: spr_polo, texto: "Todos han muerto, es un lugar demasiado hostil" },
+	{ nombre: "Polo", sprite: spr_polo, texto: "Deberíamos posponer indefinidamente una guerra con los oscuros." }
 ];
 
 global.dialogo_actual    = 0;
