@@ -5,6 +5,7 @@ if (!invulnerable) {
     global.player1_lives = vidas;
     if (vidas <= 0) {
         global.player1_alive = false;
+		room_goto(MuertePolo);
     }
     
     invulnerable = true;

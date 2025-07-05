@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"Object50",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_vol_slider",
+  "eventList":[],
   "managed":true,
-  "name":"Object50",
+  "name":"obj_vol_slider",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Config",
+    "path":"folders/Objetos/Config.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_vol_slider",
+    "path":"sprites/spr_vol_slider/spr_vol_slider.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

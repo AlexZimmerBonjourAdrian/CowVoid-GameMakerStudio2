@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"Object50",
+  "%Name":"obj_salir",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Object50",
+  "name":"obj_salir",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"FinalesPVP",
+    "path":"folders/Objetos/FinalesPVP.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_salir",
+    "path":"sprites/spr_salir/spr_salir.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
