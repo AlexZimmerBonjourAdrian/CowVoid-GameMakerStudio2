@@ -7,7 +7,7 @@ if (escudo_inst != noone) {
 direction = (direction + 180 + desvio) mod 360;
         x += lengthdir_x(speed, direction);
         y += lengthdir_y(speed, direction);
-
+		instance_destroy();
     }
 }
 

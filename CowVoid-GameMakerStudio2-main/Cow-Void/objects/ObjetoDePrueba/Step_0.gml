@@ -58,6 +58,6 @@ if (!esperando_input) {
     }
 }
 if(fade_out){
-	room_goto(Dialogs3);
+	room_goto(Tutorial);
 		
 }

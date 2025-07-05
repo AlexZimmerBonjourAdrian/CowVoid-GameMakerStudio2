@@ -1,6 +1,13 @@
-if(!other.nodmg && !invulnerable) {
+if(!other.nodmg && !invulnerable && !escudo_activado) {
 	vidas -= 1;
-	
+	audio_play_sound(
+    sfx_dolor,  // asset
+    1,            // priority
+    false,        // no loop
+    0.2,         // gain 
+    0,            // offset
+    1.0           // pitch
+);
 	global.player2_lives = vidas;
 	if (vidas <= 0) {
 		global.player2_alive = false;

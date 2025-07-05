@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"sfx_pinchitossalto",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":2.3178458,
+  "name":"sfx_pinchitossalto",
+  "parent":{
+    "name":"Tutorial",
+    "path":"folders/Objetos/Tutorial.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"sfx_pinchitossalto.mp3",
+  "type":0,
+  "volume":1.0,
+}

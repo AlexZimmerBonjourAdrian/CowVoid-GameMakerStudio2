@@ -37,9 +37,10 @@ if (keyboard_check_pressed(ord("E"))) {
 
     escudo_activado = true;
     escudos -= 1;
-    escudo_timer = 300; 
+    escudo_timer = 120; 
 
-    var escudo = instance_create_layer(x, y, "Instances", EscudoPoloTutorial);
+    var escudo = instance_create_layer(x, y, "Instances", Escudo);
+	audio_play_sound(SFX_PlayerShip_Shield3_LoopEnd, 1, false, 0.3);
 	escudo.sprite_index = EscudoPolo;
     escudo.owner = id;
 }
@@ -59,6 +60,7 @@ if (keyboard_check_pressed(vk_space) && shot_count < 3 && shot_cooldown_timer <=
     bullet.owner     = id;
     bullet.direction = 90;
     bullet.speed     = 20;
+	audio_play_sound(SFX_Turret_Laser1, 1, false, 0.3);
     
     shot_count += 1;
     if (shot_count >= 3) {
@@ -69,19 +71,16 @@ if (keyboard_check_pressed(vk_space) && shot_count < 3 && shot_cooldown_timer <=
 
 if (escudo_activado) {
     escudo_timer -= 1;
-
+	
     if (escudo_timer <= 0) {
         escudo_activado = false;
 		
     }
 }
 
-if (x > room_width) {
-    x = 0;
-}
-
-else if (x < 0) {
-    x = room_width;
-}
+if (x < 0)                x = 0;
+else if (x > room_width) x = room_width;
+if (y < 0)                y = 0;
+else if (y > room_height) y = room_height;
 if (y < 0)                y = 0;
 else if (y > room_height) y = room_height;

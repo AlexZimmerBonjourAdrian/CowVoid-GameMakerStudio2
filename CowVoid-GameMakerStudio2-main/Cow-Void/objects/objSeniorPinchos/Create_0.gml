@@ -1,5 +1,5 @@
 sprite_index = Seniorpinch;
-
+alarm[0] = room_speed * 0.6;
 if (variable_instance_exists(id, "randomSpawn") && randomSpawn) {
 
     randomSpawn = false;
@@ -10,7 +10,7 @@ if (variable_instance_exists(id, "randomSpawn") && randomSpawn) {
 
 } else {
 
-    y = room_height - 90 + sprite_get_bbox_bottom(Seniorpinch)/2;
+    y = room_height - 90 - 90 + sprite_get_bbox_bottom(Seniorpinch)/2;
 
     gravity = 0.5;
 

@@ -9,4 +9,4 @@ w.blink_timer    = 0;
 w.blink_duration = room_speed * 2; 
 w.spawnX         = warnX;
 w.alarm[0]       = w.blink_duration;
-alarm[7] = room_speed * irandom_range(3, 6);
+alarm[7] = room_speed * (2 + random(11));

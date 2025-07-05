@@ -1,6 +1,6 @@
 if (instance_exists(owner) && owner.escudo_activado) {
-    x = owner.x-45;
-    y = owner.y-35;
+    x = owner.x;
+    y = owner.y;
 } else {
     instance_destroy();
 }

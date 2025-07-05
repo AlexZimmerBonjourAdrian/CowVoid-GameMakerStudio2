@@ -1,13 +1,5 @@
 if (!invulnerable) {
     vidas -= 1;
-    
-    // Actualizar variables globales del GameManager
-    global.player2_lives = vidas;
-    if (vidas <= 0) {
-        global.player2_alive = false;
-        room_goto(Menu);
-    }
-    
     invulnerable = true;
     invul_timer = 60;
 

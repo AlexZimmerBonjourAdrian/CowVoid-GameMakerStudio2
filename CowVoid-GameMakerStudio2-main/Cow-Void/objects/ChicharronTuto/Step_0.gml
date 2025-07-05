@@ -40,9 +40,10 @@ if (keyboard_check_pressed(ord("O"))) {
 
     escudo_activado = true;
     escudos -= 1;
-    escudo_timer = 300; 
+    escudo_timer = 120; 
 
-    var escudo = instance_create_layer(x+90, y+90, "Instances", EscudoChicharronTutorial);
+    var escudo = instance_create_layer(x, y, "Instances", Escudo);
+	audio_play_sound(SFX_PlayerShip_Shield3_LoopEnd, 1, false, 0.3);
     escudo.owner = id;
 	escudo.sprite_index = EscudoChicharron
 }
@@ -68,7 +69,8 @@ if (shot_cooldown_timer > 0) {
 }
 */
 if (keyboard_check_pressed(vk_enter) && shot_count < 3 && shot_cooldown_timer <= 0) {
-    var bullet = instance_create_layer(center_x, y, "Instances", Bullet);
+    var bullet = instance_create_layer(center_x - 45 , y - 45, "Instances", Bullet);
+		audio_play_sound(SFX_Turret_Laser_Upgraded1, 1, false, 0.3);
 	bullet.owner     = id;
 	bullet.direction = 90;
 	bullet.speed     = 20;
@@ -89,12 +91,7 @@ if (escudo_activado) {
 
 
 
-if (x > room_width) {
-    x = 0;
-}
-// Si sale por la izquierda, aparece por la derecha
-else if (x < 0) {
-    x = room_width;
-}
+if (x < 0)                x = 0;
+else if (x > room_width) x = room_width;
 if (y < 0)                y = 0;
 else if (y > room_height) y = room_height;

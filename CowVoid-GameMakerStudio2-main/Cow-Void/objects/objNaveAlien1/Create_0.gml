@@ -19,7 +19,7 @@ escudo_duration        = room_speed * 1;
 escudo_radius          = 100;               
 
 shot_count             = 0;
-shot_cooldown_timer    = 0;
+shot_cooldown_timer    = 0.5;
 shot_cooldown_duration = ceil(room_speed * 0.8);
 
 image_speed = 0.2;

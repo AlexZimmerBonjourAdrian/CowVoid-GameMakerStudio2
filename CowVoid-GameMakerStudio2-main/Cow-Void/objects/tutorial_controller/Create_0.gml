@@ -1,7 +1,7 @@
 // Config
 
 //CONTADOR PARA FINALIZAR EL JUEGO
-alarm[6] = room_speed * 120; 
+alarm[6] = room_speed * 160; 
 
 
 ini_open("config.ini");
@@ -24,13 +24,13 @@ if (!audio_is_playing(snd_Primer_aventura)) {
 }
 
 // Crear naves
-with(instance_create_layer(room_width / 2 + 80, room_height - sprite_height / 2 - 80, "Instances", PoloTuto)){
+with(instance_create_layer(room_width / 2 - 80 , room_height - sprite_height / 2 - 80, "Instances", PoloTuto)){
 	image_xscale = 0.5;	
 	image_yscale = 0.5;
 
 };
 
-with (instance_create_layer(room_width/2 + 80,room_height - sprite_height/2 - 200,"Instances",ChicharronTuto)){
+with (instance_create_layer(room_width/2 + 80,room_height - sprite_height/2 - 80 ,"Instances",ChicharronTuto)){
     image_xscale = 0.5;
     image_yscale = 0.5;};
 
@@ -42,11 +42,10 @@ descripcion = false;
 descripcion_a_mostrar = "";
 tiempo_texto = 0;
 
-//alarm[9] = room_speed * 0.5 + random (3);
-//alarm[10] = room_speed *(1+ random(10)); 
-//alarm[1] = room_speed * 25;
-//alarm[7] = room_speed * 15;
-//alarm[11] = room_speed * 20;
-alarm[8] = room_speed;
+alarm[9] = room_speed * 1 + random (3); // ALARM METEORITO
 
-
+alarm[10] = room_speed *(1 + random(5));  //ALARM MINA ESPACIAL
+alarm[1] = room_speed * (20 + random(8)) ; // NAVE ALIEN SOLDADO
+alarm[7] = room_speed * (5 + random(8)); // PINCHITO
+alarm[11] = room_speed *(20 + random(10)); // ALIEN KAMI
+alarm[8] = room_speed * 50; //METRALLETA
