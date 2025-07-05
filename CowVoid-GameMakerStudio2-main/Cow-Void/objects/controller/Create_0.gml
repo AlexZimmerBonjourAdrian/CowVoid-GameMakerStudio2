@@ -45,4 +45,4 @@ with(instance_create_layer(room_width / 2, 80, "Instances", obj_player_2_chichar
 
 alarm[0] = room_speed * 2; // GUSANOS
 alarm[1] = room_speed * 2; // ASTEROIDES
-alarm[2] = room_speed * 2; // AGUJERO DE GUSANO
+//alarm[2] = room_speed * 2; // AGUJERO DE GUSANO

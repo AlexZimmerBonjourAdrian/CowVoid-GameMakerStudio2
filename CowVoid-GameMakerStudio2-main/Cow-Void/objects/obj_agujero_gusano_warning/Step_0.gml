@@ -5,11 +5,12 @@ if (time >= duration) {
 
 switch (estado) {
     case "abriendo":
-        radio += vel_crecimiento * time / 7;
+        radio += vel_crecimiento * time / 30;
         if (radio >= radio_maximo) {
             radio = radio_maximo;
             estado = "activo";
             t_vida = 0;
+			instance_create_layer(x - sprite_width, y - sprite_height, "Instances", Gusano);
         }
         break;
 

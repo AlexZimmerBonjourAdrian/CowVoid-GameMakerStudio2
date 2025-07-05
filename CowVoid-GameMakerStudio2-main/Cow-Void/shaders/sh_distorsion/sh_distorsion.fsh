@@ -16,7 +16,7 @@ void main() {
         float angle = atan(offset.y, offset.x);
 
         // Velocidad y cantidad de rotación (ajustar factor)
-        float rotation = u_time * u_radius *  150.0 * strength;
+        float rotation = u_time * u_radius *  80.0 * strength;
 
         // Nueva posición rotada
         float s = sin(angle + rotation);

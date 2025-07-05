@@ -12,7 +12,7 @@ if (audio_is_playing(snd_musica_menu)) {
 }
 
 
-if (x >= room_width + 300) {
+if (x >= room_width + 400) {
     room_goto(Dialogs);
 	instance_destroy();
 }

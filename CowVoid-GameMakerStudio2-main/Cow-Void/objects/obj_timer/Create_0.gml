@@ -1,4 +1,4 @@
-tiempo_restante = 10;
+tiempo_restante = 20;
 
 mostrarMuerteSubita = false;
 tiempoMensaje = 0;

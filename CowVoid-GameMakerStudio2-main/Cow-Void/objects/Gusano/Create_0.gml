@@ -23,6 +23,6 @@ max_bounces = 4;
 dir = 1;
 entrance_time = 1 * room_speed;
 
-if (y >= room_height){
+if (y >= room_height / 2){
 	dir = -1;
 }
