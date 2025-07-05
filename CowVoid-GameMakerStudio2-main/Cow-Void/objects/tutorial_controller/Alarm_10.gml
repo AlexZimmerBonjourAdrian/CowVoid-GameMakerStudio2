@@ -1,4 +1,4 @@
-if(!finalizando){
+if(!global.finalizando){
 	var mina = instance_create_layer(
         irandom(room_width),
         0,

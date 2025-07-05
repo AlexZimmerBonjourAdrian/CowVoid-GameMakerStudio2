@@ -68,17 +68,47 @@ if (shot_cooldown_timer > 0) {
     }
 }
 */
-if (keyboard_check_pressed(vk_enter) && shot_count < 4 && shot_cooldown_timer <= 0) {
-    var bullet = instance_create_layer(center_x - 45 , y - 45, "Instances", Bullet);
-		audio_play_sound(SFX_Turret_Laser_Upgraded1, 1, false, 0.3);
-	bullet.owner     = id;
-	bullet.direction = 90;
-	bullet.speed     = 20;
-    shot_count += 1;
-    if (shot_count >= 4) {
-        shot_cooldown_timer = shot_cooldown_duration;
+if (!rapid_fire) {
+    if (keyboard_check_pressed(vk_enter) && shot_count < 4 && shot_cooldown_timer <= 0) {
+        var bullet = instance_create_layer(center_x - 45, y - 45, "Instances", Bullet);
+        audio_play_sound(SFX_Turret_Laser_Upgraded1, 1, false, 0.3);
+        bullet.owner     = id;
+        bullet.direction = 90;
+        bullet.speed     = 20;
+        shot_count += 1;
+        if (shot_count >= 4) {
+            shot_cooldown_timer = shot_cooldown_duration;
+        }
     }
-}
+}else{
+    rapid_fire_timer -= 1;
+    rapid_fire_shot_timer += 1;
+    if (rapid_fire_shot_timer >= room_speed * 0.1) {
+        rapid_fire_shot_timer = 0;
+        var bullet = instance_create_layer(center_x - 45, y - 45, "Instances", Bullet);
+        bullet.owner     = id;
+        bullet.direction = 90;
+        bullet.speed     = 20;
+		audio_play_sound(SFX_Turret_Laser1, 1, false, 0.3);
+    }
+    if (rapid_fire_timer <= 0) {
+        rapid_fire = false;
+    }
+}/*else{
+    rapid_fire_timer -= 1;
+    rapid_fire_shot_timer += 1;
+    if (rapid_fire_shot_timer >= room_speed * 0.1) {
+        rapid_fire_shot_timer = 0;
+        var bullet = instance_create_layer(center_x, y - 40, "Instances", Bullet);
+        bullet.owner     = id;
+        bullet.direction = 90;
+        bullet.speed     = 20;
+		audio_play_sound(SFX_Turret_Laser1, 1, false, 0.3);
+    }
+    if (rapid_fire_timer <= 0) {
+        rapid_fire = false;
+    }
+}*/
 
 if (escudo_activado) {
     escudo_timer -= 1;

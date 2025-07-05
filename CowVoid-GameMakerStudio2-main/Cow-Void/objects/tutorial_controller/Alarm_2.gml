@@ -1,5 +1,5 @@
 // AGUJERO DE GUSANO
-if(!finalizando){
+if(!global.finalizando){
 var player1_exists = instance_exists(PoloTuto);
 var player2_exists = instance_exists(ChicharronTuto);
 

@@ -1,5 +1,6 @@
-time_left -= 1;
-if (time_left <= 0) {
+if(!global.finalizando){
+time_left -= 1;}
+if (!global.finalizando && time_left <= 0) {
     var p1 = instance_exists(PoloTuto);
     var p2 = instance_exists(ChicharronTuto);
     

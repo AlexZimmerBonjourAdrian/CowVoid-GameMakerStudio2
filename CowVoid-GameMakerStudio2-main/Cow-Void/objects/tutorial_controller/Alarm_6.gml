@@ -1,5 +1,5 @@
-if (!finalizando) {
-    finalizando = true;
+if (!global.finalizando) {
+    global.finalizando = true;
     alarm[6] = room_speed;
 }
 else {
