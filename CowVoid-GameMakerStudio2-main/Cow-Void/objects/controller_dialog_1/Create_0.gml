@@ -28,7 +28,10 @@ dialogos = [
     {nombre: "Ribs", sprite: spr_ribs_enojado, texto: "Si escucho una queja tuya…"},
     {nombre: "Ribs", sprite: spr_ribs_enojado, texto: "El resto de tu vida seria tan miserable que te volveria voluntariamente mudo."},
     {nombre: "Ribs", sprite: spr_ribs_enojado, texto: "Espero ser claro..."},
-    {nombre: "Polo", sprite: spr_polo, texto: "… Entendido."}
+    {nombre: "Polo", sprite: spr_polo, texto: "… Entendido."},
+	    {nombre: "Ribs", sprite: spr_ribs_enojado, texto: "Por cierto, le dije a Namdo para que te ayude"},
+		    {nombre: "Polo", sprite: spr_polo, texto: "… Hmm ok."},
+			 {nombre: "Namdo", sprite: spr_namdo, texto: "Vamos a la sala de entrenamiento, te llevo..."},
 ];
 
 // Estado del diálogo

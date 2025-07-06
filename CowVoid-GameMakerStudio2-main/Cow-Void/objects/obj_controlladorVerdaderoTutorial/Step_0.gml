@@ -22,12 +22,11 @@ if( global.dialogo_actual==6){
 var d = dialogos[global.dialogo_actual];
 
 if (!esperando_input) {
-    // Permitir aceleración tras el delay del alarm[0]
+
     if (d.tipo == "texto" && skip_allowed && keyboard_check_pressed(vk_anykey) && !skip_activated) {
         skip_activated         = true;
         velocidad_texto_actual = fast_velocidad_texto;
     }
-    // Avanzar la escritura carácter a carácter
     frame_counter++;
     if (frame_counter >= velocidad_texto_actual) {
         frame_counter = 0;
@@ -41,15 +40,13 @@ if (!esperando_input) {
         }
     }
 }
-// 5) Validar avance
+
 else {
     var avanzar = false;
 
     if (d.tipo == "texto") {
-        // ANY KEY avanza una vez que el texto está completo
         if (keyboard_check_pressed(vk_anykey)) avanzar = true;
     } else {
-        // Solo avanzan con las teclas concretas en d.controles
         for (var i = 0; i < array_length(d.controles); i++) {
             var k = d.controles[i];
             if ((k == "SPACE"  && keyboard_check_pressed(vk_space))  ||
@@ -68,7 +65,6 @@ else {
 
     if (avanzar) {
         global.dialogo_actual++;
-        // Reset de máquina de escribir y flags
         texto_mostrado           = "";
         char_index               = 0;
         frame_counter            = 0;
@@ -76,7 +72,6 @@ else {
         skip_activated           = false;
         velocidad_texto_actual   = base_velocidad_texto;
         skip_allowed             = false;
-        // Reprogramar delay para el próximo texto
         alarm[0]                 = room_speed / 2;
     }
 }
