@@ -21,7 +21,7 @@ if (!esperando_input) {
 }
 
 if (fade_out) {
-    room_goto(FinalPVP);
+    room_goto(Creditos);
 }
 
 audio_stop_sound(snd_Muerte);
