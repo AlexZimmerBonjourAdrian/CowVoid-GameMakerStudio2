@@ -1,4 +1,4 @@
-if (other.owner != owner && !damaged) {
+if (!damaged) {
 	
 	vida -= 1;
 	
