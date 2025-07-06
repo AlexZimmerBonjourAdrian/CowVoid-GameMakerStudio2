@@ -4,7 +4,7 @@ if(!other.nodmg && !invulnerable) {
 	global.player1_lives = vidas;
 	if (vidas <= 0) {
 		global.player2_alive = false;
-		global.ultima_room_jugada = Tutorial;
+		global.ultima_room_jugada = Supervivencia;
 	}
 	
 	invulnerable = true;

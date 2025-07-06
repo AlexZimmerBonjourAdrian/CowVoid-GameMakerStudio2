@@ -206,7 +206,8 @@
     {"id":{"name":"MuerteChicharron","path":"rooms/MuerteChicharron/MuerteChicharron.yy",},},
     {"id":{"name":"MuertePolo","path":"rooms/MuertePolo/MuertePolo.yy",},},
     {"id":{"name":"PvP","path":"rooms/PvP/PvP.yy",},},
-    {"id":{"name":"Tutorial","path":"rooms/Tutorial/Tutorial.yy",},},
+    {"id":{"name":"Supervivencia","path":"rooms/Supervivencia/Supervivencia.yy",},},
+    {"id":{"name":"VerdaderoTutorial","path":"rooms/VerdaderoTutorial/VerdaderoTutorial.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
     {"id":{"name":"sh_distorsion","path":"shaders/sh_distorsion/sh_distorsion.yy",},},
     {"id":{"name":"charlafinal","path":"sounds/charlafinal/charlafinal.yy",},},
@@ -687,7 +688,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
-    {"roomId":{"name":"Tutorial","path":"rooms/Tutorial/Tutorial.yy",},},
+    {"roomId":{"name":"Supervivencia","path":"rooms/Supervivencia/Supervivencia.yy",},},
     {"roomId":{"name":"PvP","path":"rooms/PvP/PvP.yy",},},
     {"roomId":{"name":"Dialogs","path":"rooms/Dialogs/Dialogs.yy",},},
     {"roomId":{"name":"Config","path":"rooms/Config/Config.yy",},},
@@ -702,6 +703,7 @@
     {"roomId":{"name":"MenuControllers","path":"rooms/MenuControllers/MenuControllers.yy",},},
     {"roomId":{"name":"Duel","path":"rooms/Duel/Duel.yy",},},
     {"roomId":{"name":"FinalPVP","path":"rooms/FinalPVP/FinalPVP.yy",},},
+    {"roomId":{"name":"VerdaderoTutorial","path":"rooms/VerdaderoTutorial/VerdaderoTutorial.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

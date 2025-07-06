@@ -58,6 +58,6 @@ if (!esperando_input) {
     }
 }
 if(fade_out){
-	room_goto(Tutorial);
+	room_goto(Supervivencia);
 		
 }

@@ -22,5 +22,5 @@ if (!esperando_input) {
 
 // Fade out
 if (fade_out) {
-    room_goto(Tutorial);
+    room_goto(Supervivencia);
 }

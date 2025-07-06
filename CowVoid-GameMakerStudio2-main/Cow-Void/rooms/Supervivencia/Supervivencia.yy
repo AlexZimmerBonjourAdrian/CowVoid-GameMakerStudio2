@@ -1,16 +1,16 @@
 {
   "$GMRoom":"v1",
-  "%Name":"Tutorial",
-  "creationCodeFile":"rooms/Tutorial/RoomCreationCode.gml",
+  "%Name":"Supervivencia",
+  "creationCodeFile":"rooms/Supervivencia/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
-    {"name":"inst_3F6966F0","path":"rooms/Tutorial/Tutorial.yy",},
-    {"name":"inst_7799914","path":"rooms/Tutorial/Tutorial.yy",},
-    {"name":"inst_399F2F11","path":"rooms/Tutorial/Tutorial.yy",},
-    {"name":"inst_5AEF0C6C","path":"rooms/Tutorial/Tutorial.yy",},
-    {"name":"inst_794E843D","path":"rooms/Tutorial/Tutorial.yy",},
+    {"name":"inst_3F6966F0","path":"rooms/Supervivencia/Supervivencia.yy",},
+    {"name":"inst_7799914","path":"rooms/Supervivencia/Supervivencia.yy",},
+    {"name":"inst_399F2F11","path":"rooms/Supervivencia/Supervivencia.yy",},
+    {"name":"inst_5AEF0C6C","path":"rooms/Supervivencia/Supervivencia.yy",},
+    {"name":"inst_794E843D","path":"rooms/Supervivencia/Supervivencia.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -31,7 +31,7 @@
         {"name":"g_VignetteTexture","type":2,"value":"_filter_vignette_texture",},
       ],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"Main_Background","path":"sprites/Main_Background/Main_Background.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
-  "name":"Tutorial",
+  "name":"Supervivencia",
   "parent":{
     "name":"Salas",
     "path":"folders/Salas.yy",
