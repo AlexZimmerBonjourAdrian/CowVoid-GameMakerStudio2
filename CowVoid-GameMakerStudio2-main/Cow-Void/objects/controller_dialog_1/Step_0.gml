@@ -29,7 +29,7 @@ if (fade_out) {
 
         if (nuevo_volumen <= 0) {
             audio_stop_sound(snd_musica_dialog);
-            room_goto(Dialogs2);
+            room_goto(VerdaderoTutorial);
         }
     }
 }

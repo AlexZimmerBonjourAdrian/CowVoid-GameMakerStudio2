@@ -1,27 +1,32 @@
-draw_set_color(c_white);
-draw_set_halign(fa_left);
-draw_set_valign(fa_top);
+/// --- Draw Event de obj_contolladorVerdaderoTutorial ---
 
-// Fondo de diálogo
-var box_x = 32;
-var box_y = room_height - 128;
-var box_w = room_width - 64;
-var box_h = 96;
+if (global.dialogo_actual < array_length(dialogos)) {
+    var d = dialogos[global.dialogo_actual];
 
-draw_set_color(c_white);
-draw_rectangle(box_x - 2, box_y - 2, box_x + box_w + 2, box_y + box_h + 2, false); // borde blanco
+    // Usamos alineación centrada
+    draw_set_halign(fa_center);
 
-draw_set_color(c_black);
-draw_rectangle(box_x, box_y, box_x + box_w, box_y + box_h, false); // fondo negro
+    // 1) Nombre centrado arriba
+    var name_x = room_width * 0.5;
+    var name_y = 16;
+    // Sombra
+    draw_set_color(c_black);
+    draw_text(name_x + 2, name_y + 2, d.nombre);
+    // Nombre en blanco
+    draw_set_color(c_white);
+    draw_text(name_x, name_y, d.nombre);
 
-// Sprite personaje
-var spr = dialogos[global.dialogo_actual].sprite;
-draw_sprite(spr, 0, box_x + 8, box_y + 8);
+    // 2) Texto centrado justo debajo del nombre
+    var line_h = 20;  // altura de línea fija
+    var text_x = room_width * 0.5;
+    var text_y = name_y + line_h + 8;
+    // Sombra
+    draw_set_color(c_black);
+    draw_text(text_x + 2, text_y + 2, texto_mostrado);
+    // Texto en blanco
+    draw_set_color(c_white);
+    draw_text(text_x, text_y, texto_mostrado);
 
-// Texto
-draw_set_color(c_white);
-draw_text(box_x + 120, box_y + 16, texto_mostrado);
-
-// Nombre
-draw_set_color(c_white);
-draw_text(box_x + 120, box_y, dialogos[global.dialogo_actual].nombre);
+    // Volver a alineación por defecto (izquierda), si la necesitas después
+    draw_set_halign(fa_left);
+}

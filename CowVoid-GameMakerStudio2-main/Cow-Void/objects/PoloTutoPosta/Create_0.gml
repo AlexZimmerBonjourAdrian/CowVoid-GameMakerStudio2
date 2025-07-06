@@ -1,0 +1,15 @@
+image_blend = c_white;
+damaged = false;
+timer_dmg = 0;
+vidas = 5;
+invulnerable = false;
+invul_timer = 0;
+escudos = 3;
+escudo_activado = false;
+escudo_timer = 0;
+shot_count            = 0;
+shot_cooldown_timer   = 0;
+shot_cooldown_duration = ceil(room_speed * 0.5);
+rapid_fire            = false;
+rapid_fire_timer      = 0;            
+rapid_fire_shot_timer = 0;  
