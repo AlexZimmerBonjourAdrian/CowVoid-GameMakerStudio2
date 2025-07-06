@@ -10,6 +10,10 @@ escudo_timer = 0;
 shot_cooldown_timer = 0;
 shot_count = 0;
 shot_cooldown_duration = ceil(room_speed * 0.5);
+rapid_fire            = false;
+rapid_fire_timer      = 0;            
+rapid_fire_shot_timer = 0;  
+
 
 var barrera_espaciado = 300;
 var barrera_y = y - 150;
