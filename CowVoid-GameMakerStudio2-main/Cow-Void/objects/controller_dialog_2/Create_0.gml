@@ -1,5 +1,3 @@
-
-
 // Detener música anterior (menú)
 var fade_speed = 0.02;
 var snd = snd_musica_menu;
