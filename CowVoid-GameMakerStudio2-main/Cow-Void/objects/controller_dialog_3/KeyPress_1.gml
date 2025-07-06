@@ -30,7 +30,7 @@ else if (!dialogo_terminado) {
             instance_create_layer(
                 room_width/2,
                 room_height/2 - 100,
-                "Instances",
+                "Instances_3",
                 obj_PoloFront
             );
 
