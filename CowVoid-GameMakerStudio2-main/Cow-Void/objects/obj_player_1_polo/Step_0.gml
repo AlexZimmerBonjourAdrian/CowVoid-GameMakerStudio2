@@ -38,7 +38,7 @@ if (keyboard_check_pressed(ord("E"))) {
     escudo_activado = true;
     escudos -= 1;
     escudo_timer = 300; 
-
+	audio_play_sound(SFX_PlayerShip_Shield3_LoopEnd, 1, false, 0.3);
     var escudo = instance_create_layer(x, y, "Instances", Escudo);
 	escudo.sprite_index = EscudoPolo;
     escudo.owner = id;
@@ -50,20 +50,38 @@ if (shot_cooldown_timer > 0) {
         shot_count = 0;
     }
 }
-if (keyboard_check_pressed(vk_space) && shot_count < 4 && shot_cooldown_timer <= 0) {
-    var bullet = instance_create_layer(x, y, "Instances", Bullet);
-    bullet.x = x;
-    bullet.y = y;
-	bullet.owner = id;
-    bullet.speed = 20; 
-    
-	shot_count += 1;
-    if (shot_count >= 4) {
-        shot_cooldown_timer = shot_cooldown_duration;
+if (!rapid_fire) {
+	if (keyboard_check_pressed(vk_space) && shot_count < 4 && shot_cooldown_timer <= 0) {
+	    var bullet = instance_create_layer(x, y, "Instances", Bullet);
+	    bullet.x = x;
+	    bullet.y = y;
+		bullet.owner = id;
+		bullet.dir = "up";
+	    bullet.speed = 20; 
+	    audio_play_sound(SFX_Turret_Laser1, 1, false, 0.3);
+		shot_count += 1;
+	    if (shot_count >= 4) {
+	        shot_cooldown_timer = shot_cooldown_duration;
+	    }
+
+	}
+}else{
+	rapid_fire_timer -= 1;
+    rapid_fire_shot_timer += 1;
+    if (rapid_fire_shot_timer >= room_speed * 0.1) {
+        rapid_fire_shot_timer = 0;
+		var bullet = instance_create_layer(x, y, "Instances", Bullet);
+        bullet.x = x;
+	    bullet.y = y;
+		bullet.owner = id;
+		bullet.dir = "up";
+	    bullet.speed = 20; 
+		audio_play_sound(SFX_Turret_Laser1, 1, false, 0.3);
     }
-
+    if (rapid_fire_timer <= 0) {
+        rapid_fire = false;
+    }
 }
-
 if (escudo_activado) {
     escudo_timer -= 1;
 

@@ -11,7 +11,14 @@ if (!invulnerable) {
     
     invulnerable = true;
     invul_timer = 60;
-
+	audio_play_sound(
+	    sfx_pinchitossalto,  // asset
+	    1,            // priority
+	    false,        // no loop
+	    0.2,         // gain 
+	    0,            // offset
+	    1.0           // pitch
+	);
     if (vidas <= 0) {
         effect_create_above(ef_firework, obj_player_1_polo.x, obj_player_1_polo.y, 1, c_white);    
         instance_destroy();

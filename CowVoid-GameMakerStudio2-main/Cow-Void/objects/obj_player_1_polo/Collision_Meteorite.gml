@@ -8,7 +8,14 @@ if (!invulnerable) {
 		global.ultima_room_jugada = PvP;
 		//room_goto(MuertePolo);
     }
-    
+    audio_play_sound(
+	    sfx_dolor,  // asset
+	    1,            // priority
+	    false,        // no loop
+	    0.2,         // gain 
+	    0,            // offset
+	    1.0           // pitch
+	);
     invulnerable = true;
     invul_timer = 60;
 
