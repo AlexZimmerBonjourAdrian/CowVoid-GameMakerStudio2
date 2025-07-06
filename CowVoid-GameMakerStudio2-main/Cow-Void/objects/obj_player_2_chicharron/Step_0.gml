@@ -46,6 +46,7 @@ if (keyboard_check_pressed(ord("O"))) {
     var escudo = instance_create_layer(x, y, "Instances", Escudo);
     escudo.owner = id;
 	escudo.sprite_index = EscudoChicharron
+	audio_play_sound(SFX_PlayerShip_Shield3_LoopEnd, 1, false, 0.3);
 }
 
 if (shot_cooldown_timer > 0) {
@@ -62,7 +63,7 @@ if (keyboard_check_pressed(vk_enter) && shot_count < 4 && shot_cooldown_timer <=
 	bullet.owner = id;
     
     bullet.direction = 270;
-	
+	audio_play_sound(SFX_Turret_Laser1, 1, false, 0.3);
 	shot_count += 1;
     if (shot_count >= 4) {
         shot_cooldown_timer = shot_cooldown_duration;

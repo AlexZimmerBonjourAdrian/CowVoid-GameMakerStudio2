@@ -17,7 +17,14 @@ if(!other.nodmg && !invulnerable) {
         instance_destroy();
 		
     }
-	
+	audio_play_sound(
+	    sfx_dolor,  // asset
+	    1,            // priority
+	    false,        // no loop
+	    0.2,         // gain 
+	    0,            // offset
+	    1.0           // pitch
+	);
 	with (other) instance_destroy();
 	image_blend = c_red;
 	damaged = true;
