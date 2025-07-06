@@ -1,5 +1,8 @@
 // AGUJERO DE GUSANO
 
+
+
+
 var player1_exists = instance_exists(obj_player_1_polo);
 var player2_exists = instance_exists(obj_player_2_chicharron);
 

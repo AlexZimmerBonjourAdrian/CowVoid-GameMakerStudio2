@@ -4,9 +4,9 @@ if(!other.nodmg && !invulnerable) {
 	// Actualizar variables globales del GameManager
 	global.player1_lives = vidas;
 	if (vidas <= 0) {
-		global.player1_alive = false;
+		//global.player1_alive = false;
 		global.ultima_room_jugada = PvP;
-		room_goto(MuertePolo);
+		//room_goto(MuertePolo);
 	}
 	
 	invulnerable = true;
