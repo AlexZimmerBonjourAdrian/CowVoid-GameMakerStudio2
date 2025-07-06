@@ -710,7 +710,9 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"PvP","path":"rooms/PvP/PvP.yy",},},
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
+    {"roomId":{"name":"FinalPVP","path":"rooms/FinalPVP/FinalPVP.yy",},},
     {"roomId":{"name":"VerdaderoTutorial","path":"rooms/VerdaderoTutorial/VerdaderoTutorial.yy",},},
     {"roomId":{"name":"Config","path":"rooms/Config/Config.yy",},},
     {"roomId":{"name":"Dialogs","path":"rooms/Dialogs/Dialogs.yy",},},
@@ -728,7 +730,6 @@
     {"roomId":{"name":"MenuControllers","path":"rooms/MenuControllers/MenuControllers.yy",},},
     {"roomId":{"name":"FinalPVP","path":"rooms/FinalPVP/FinalPVP.yy",},},
     {"roomId":{"name":"Duel","path":"rooms/Duel/Duel.yy",},},
-    {"roomId":{"name":"PvP","path":"rooms/PvP/PvP.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

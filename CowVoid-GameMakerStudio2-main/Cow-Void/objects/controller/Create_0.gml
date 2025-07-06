@@ -8,19 +8,40 @@ global.music_volume = ini_read_real("audio", "music_volume", 0.5);
 global.ultima_room_jugada = PvP;
 
 
+
+if (!variable_global_exists("rondaEnCurso")) {
+	global.rondaEnCurso = 1;
+	global.rondasGanadasJ1 = 0;
+	global.rondasGanadasJ2 = 0;
+} else {
+
+	if(global.rondasGanadasJ2 == 2) {
+		global.hayGanador = true;
+		global.ganadorEs = obj_player_2_chicharron;
+        global.mensaje = "¡GANA JUGADOR 2!";
+		room_goto(FinalPVP);
+	}
+	
+	if(global.rondasGanadasJ1 == 2) {
+		global.hayGanador = true;
+		global.ganadorEs = obj_player_1_polo;
+        global.mensaje = "¡GANA JUGADOR 1!";
+		room_goto(FinalPVP);
+	}
+}
+
+
+
 if (room == Duel){
     global.inicioPelea = false;
-    global.countdown = room_speed * 3;
     global.modoDuel = true;
 	global.hayGanador = false;
 	global.ganadorEs = noone;
 	global.hayEmpate = false;
 } else if (room == PvP){
-    global.inicioPelea = true; 
     global.modoDuel = false;
 }
 
-global.modoDuel = true
 global.inicioPelea = false;
 global.countdown = room_speed * 3;
 
