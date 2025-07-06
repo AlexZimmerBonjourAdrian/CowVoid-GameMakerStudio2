@@ -14,14 +14,12 @@ alarm[0] = room_speed * fade_speed + 1;
 // Diálogos
 dialogos = [
     { nombre: "", sprite: SpriteVacio, texto: "" },
-    { nombre: "Chicharron", sprite: spr_chicharron, texto: "Ribs tenias razon" },
-	{ nombre: "Ribs", sprite: spr_ribs, texto: "Te lo dije." },
-	{ nombre: "Chicharron", sprite: spr_chicharron, texto: "Polo no era compatible con nuestros fines" },
-	{ nombre: "Ribs", sprite: spr_ribs, texto: "Te dije tu problema" },
-	{ nombre: "Ribs", sprite: spr_ribs, texto: "No voy a confiar en tu juicio otra vez, por tu propio bien" },
-{ nombre: "Ribs", sprite: spr_ribs, texto: "Entendido?" },
-	{ nombre: "Chicharron", sprite: spr_chicharron, texto: "Si..." },
-];
+    { nombre: "Chicharron", sprite: spr_chicharron, texto: "Ribs" },
+		{ nombre: "Ribs", sprite: spr_ribs, texto: "Has abandonado?." },
+		    { nombre: "Chicharron", sprite: spr_chicharron, texto: "Polo y Namdo han muerto" },
+					{ nombre: "Ribs", sprite: spr_ribs, texto: "Veo." },
+								{ nombre: "Ribs", sprite: spr_ribs, texto: "Es un lugar demasiado hostil. Debemos esperar antes de volver" },
+		];
 
 global.dialogo_actual    = 0;
 global.explosion_spawned = false;

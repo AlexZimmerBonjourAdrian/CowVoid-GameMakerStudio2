@@ -1,3 +1,4 @@
+
 if (global.dialogo_actual >= array_length(dialogos)) {
     fade_out = true;
 }
