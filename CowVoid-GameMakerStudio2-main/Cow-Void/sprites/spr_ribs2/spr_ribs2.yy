@@ -1,6 +1,6 @@
 {
   "$GMSprite":"",
-  "%Name":"Sprite369",
+  "%Name":"spr_ribs2",
   "bboxMode":0,
   "bbox_bottom":0,
   "bbox_left":0,
@@ -12,28 +12,36 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
+<<<<<<< Updated upstream:CowVoid-GameMakerStudio2-main/Cow-Void/sprites/Sprite369/Sprite369.yy
     {"$GMSpriteFrame":"","%Name":"add12e05-e12e-42a2-aa9e-e9af5c909fa1","name":"add12e05-e12e-42a2-aa9e-e9af5c909fa1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+=======
+    {"$GMSpriteFrame":"","%Name":"76bd4241-9fc8-490a-bf1f-c9d73dd78773","name":"76bd4241-9fc8-490a-bf1f-c9d73dd78773","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+>>>>>>> Stashed changes:CowVoid-GameMakerStudio2-main/Cow-Void/sprites/spr_ribs2/spr_ribs2.yy
   ],
   "gridX":0,
   "gridY":0,
-  "height":64,
+  "height":153,
   "HTile":false,
   "layers":[
+<<<<<<< Updated upstream:CowVoid-GameMakerStudio2-main/Cow-Void/sprites/Sprite369/Sprite369.yy
     {"$GMImageLayer":"","%Name":"8bad05bc-bb8e-4c2d-bd25-180da7c2398c","blendMode":0,"displayName":"default","isLocked":false,"name":"8bad05bc-bb8e-4c2d-bd25-180da7c2398c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+=======
+    {"$GMImageLayer":"","%Name":"86547046-4faa-45f9-961d-7287e549558d","blendMode":0,"displayName":"default","isLocked":false,"name":"86547046-4faa-45f9-961d-7287e549558d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+>>>>>>> Stashed changes:CowVoid-GameMakerStudio2-main/Cow-Void/sprites/spr_ribs2/spr_ribs2.yy
   ],
-  "name":"Sprite369",
+  "name":"spr_ribs2",
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Cow-Void",
-    "path":"Cow-Void.yyp",
+    "name":"Charla",
+    "path":"folders/Charla.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"Sprite369",
+    "%Name":"spr_ribs2",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,22 +65,27 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"Sprite369",
+    "name":"spr_ribs2",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
-    "seqHeight":64.0,
-    "seqWidth":64.0,
+    "seqHeight":153.0,
+    "seqWidth":131.0,
     "showBackdrop":true,
     "showBackdropImage":false,
     "timeUnits":1,
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+<<<<<<< Updated upstream:CowVoid-GameMakerStudio2-main/Cow-Void/sprites/Sprite369/Sprite369.yy
                 "0":{"$SpriteFrameKeyframe":"","Id":{"name":"add12e05-e12e-42a2-aa9e-e9af5c909fa1","path":"sprites/Sprite369/Sprite369.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
               },"Disabled":false,"id":"1a3e0b29-82a2-419f-93b8-225a91be5443","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+=======
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"76bd4241-9fc8-490a-bf1f-c9d73dd78773","path":"sprites/spr_ribs2/spr_ribs2.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"e5ec2990-d251-43dd-a0a4-2727aaf9d3e8","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+>>>>>>> Stashed changes:CowVoid-GameMakerStudio2-main/Cow-Void/sprites/spr_ribs2/spr_ribs2.yy
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
@@ -88,5 +101,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":64,
+  "width":131,
 }

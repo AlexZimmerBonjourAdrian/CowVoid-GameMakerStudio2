@@ -1,0 +1,114 @@
+{
+  "$GMSprite":"",
+  "%Name":"spr_ribs1",
+  "bboxMode":0,
+  "bbox_bottom":98,
+  "bbox_left":0,
+  "bbox_right":103,
+  "bbox_top":0,
+  "collisionKind":1,
+  "collisionTolerance":0,
+  "DynamicTexturePage":false,
+  "edgeFiltering":false,
+  "For3D":false,
+  "frames":[
+<<<<<<< Updated upstream:CowVoid-GameMakerStudio2-main/Cow-Void/sprites/Sprite370/Sprite370.yy
+    {"$GMSpriteFrame":"","%Name":"6fc22752-6467-46b2-af47-679e347cbec7","name":"6fc22752-6467-46b2-af47-679e347cbec7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+=======
+    {"$GMSpriteFrame":"","%Name":"c0a86d04-b08d-46c6-9a2c-0b7a2ae5aa2d","name":"c0a86d04-b08d-46c6-9a2c-0b7a2ae5aa2d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"a9a94251-e2e1-4ee1-8ffe-1fe0825b28d9","name":"a9a94251-e2e1-4ee1-8ffe-1fe0825b28d9","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+>>>>>>> Stashed changes:CowVoid-GameMakerStudio2-main/Cow-Void/sprites/spr_ribs1/spr_ribs1.yy
+  ],
+  "gridX":0,
+  "gridY":0,
+  "height":153,
+  "HTile":false,
+  "layers":[
+<<<<<<< Updated upstream:CowVoid-GameMakerStudio2-main/Cow-Void/sprites/Sprite370/Sprite370.yy
+    {"$GMImageLayer":"","%Name":"f616e488-6c1d-4d7d-b404-533833463c53","blendMode":0,"displayName":"default","isLocked":false,"name":"f616e488-6c1d-4d7d-b404-533833463c53","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+=======
+    {"$GMImageLayer":"","%Name":"f8cbe5b9-5ff3-4b8a-bcec-dbc59dd1ce33","blendMode":0,"displayName":"default","isLocked":false,"name":"f8cbe5b9-5ff3-4b8a-bcec-dbc59dd1ce33","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+>>>>>>> Stashed changes:CowVoid-GameMakerStudio2-main/Cow-Void/sprites/spr_ribs1/spr_ribs1.yy
+  ],
+  "name":"spr_ribs1",
+  "nineSlice":null,
+  "origin":0,
+  "parent":{
+<<<<<<< Updated upstream:CowVoid-GameMakerStudio2-main/Cow-Void/sprites/Sprite370/Sprite370.yy
+    "name":"Salas",
+    "path":"folders/Salas.yy",
+=======
+    "name":"Charla",
+    "path":"folders/Charla.yy",
+>>>>>>> Stashed changes:CowVoid-GameMakerStudio2-main/Cow-Void/sprites/spr_ribs1/spr_ribs1.yy
+  },
+  "preMultiplyAlpha":false,
+  "resourceType":"GMSprite",
+  "resourceVersion":"2.0",
+  "sequence":{
+    "$GMSequence":"v1",
+    "%Name":"spr_ribs1",
+    "autoRecord":true,
+    "backdropHeight":768,
+    "backdropImageOpacity":0.5,
+    "backdropImagePath":"",
+    "backdropWidth":1366,
+    "backdropXOffset":0.0,
+    "backdropYOffset":0.0,
+    "events":{
+      "$KeyframeStore<MessageEventKeyframe>":"",
+      "Keyframes":[],
+      "resourceType":"KeyframeStore<MessageEventKeyframe>",
+      "resourceVersion":"2.0",
+    },
+    "eventStubScript":null,
+    "eventToFunction":{},
+    "length":2.0,
+    "lockOrigin":false,
+    "moments":{
+      "$KeyframeStore<MomentsEventKeyframe>":"",
+      "Keyframes":[],
+      "resourceType":"KeyframeStore<MomentsEventKeyframe>",
+      "resourceVersion":"2.0",
+    },
+    "name":"spr_ribs1",
+    "playback":1,
+    "playbackSpeed":30.0,
+    "playbackSpeedType":0,
+    "resourceType":"GMSequence",
+    "resourceVersion":"2.0",
+    "seqHeight":153.0,
+    "seqWidth":131.0,
+    "showBackdrop":true,
+    "showBackdropImage":false,
+    "timeUnits":1,
+    "tracks":[
+      {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+<<<<<<< Updated upstream:CowVoid-GameMakerStudio2-main/Cow-Void/sprites/Sprite370/Sprite370.yy
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6fc22752-6467-46b2-af47-679e347cbec7","path":"sprites/Sprite370/Sprite370.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"eeba3567-4b4f-4c07-93d5-bfaa75f1e190","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+=======
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c0a86d04-b08d-46c6-9a2c-0b7a2ae5aa2d","path":"sprites/spr_ribs1/spr_ribs1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"176528b8-0345-4aa5-867b-4f5e7870ced5","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a9a94251-e2e1-4ee1-8ffe-1fe0825b28d9","path":"sprites/spr_ribs1/spr_ribs1.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"705c1369-4b71-45d8-9f57-6ead3567a63a","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+>>>>>>> Stashed changes:CowVoid-GameMakerStudio2-main/Cow-Void/sprites/spr_ribs1/spr_ribs1.yy
+          ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
+    ],
+    "visibleRange":null,
+    "volume":1.0,
+    "xorigin":0,
+    "yorigin":0,
+  },
+  "swatchColours":null,
+  "swfPrecision":0.5,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "type":0,
+  "VTile":false,
+  "width":131,
+}
