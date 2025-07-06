@@ -7,7 +7,7 @@ if (global.dialogo_actual >= array_length(dialogos)) {
 if (fade_out) {
     contador_transicion++;
     if (contador_transicion >= room_speed) {
-        room_goto(Supervivencia);
+        room_goto(Dialogs2);
     }
     exit;
 }
