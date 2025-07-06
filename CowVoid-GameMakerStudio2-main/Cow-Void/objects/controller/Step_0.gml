@@ -28,15 +28,18 @@ if(room == Duel) {
 		global.hayEmpate = true;
 		global.hayGanador = false;
 		global.ganadorEs = obj_player_1_polo;
+		global.mensaje = "EMPATE!";
 		room_goto(FinalPVP);
 	} else if(!instance_exists(obj_player_1_polo) && instance_exists(obj_player_2_chicharron)) {
 		global.hayEmpate = false;
 		global.hayGanador = true;
 		global.ganadorEs = obj_player_2_chicharron;
+				global.mensaje = "GANA JUGADOR 2!";
 		room_goto(FinalPVP);
 	} else if(instance_exists(obj_player_1_polo) && !instance_exists(obj_player_2_chicharron)) {
 		global.hayEmpate = false;
 		global.hayGanador = true;
+		global.mensaje = "GANA JUGADOR 1!"
 		global.ganadorEs = obj_player_1_polo;
 		room_goto(FinalPVP);
 	}
