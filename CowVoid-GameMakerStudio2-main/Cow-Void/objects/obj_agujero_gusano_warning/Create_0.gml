@@ -1,3 +1,12 @@
+audio_play_sound(
+    sfx_saltodepinchoswarn,  // asset
+    1,            // priority
+    false,        // no loop
+    3,         // gain 
+    0,            // offset
+    1.0           // pitch
+);
+
 time = 0;
 tiempo_inicio = current_time;
 duration = 180; // 3 segundos a 60 fps
