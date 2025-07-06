@@ -7,4 +7,4 @@
     
     escudito.direction = 270;                 
     escudito.speed     = random_range(1, 3);  
-	alarm[2] = room_speed * (12 + random(35));
+	alarm[2] = room_speed * (15 + random(35));

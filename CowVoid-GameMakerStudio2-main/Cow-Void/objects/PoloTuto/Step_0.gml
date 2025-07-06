@@ -6,7 +6,6 @@ var pressed_up    = keyboard_check(ord("W"));
 var pressed_down  = keyboard_check(ord("S"));
 var ydirection    = pressed_down - pressed_up;
 
-// unified move speed
 var move_speed = 11;
 
 

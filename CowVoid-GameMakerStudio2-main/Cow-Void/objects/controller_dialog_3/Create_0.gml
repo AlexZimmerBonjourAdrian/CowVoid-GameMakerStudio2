@@ -1,4 +1,15 @@
-// Detener música anterior (menú)
+ship_polo    = instance_create_layer(room_width/2, room_height - sprite_height/2 - 220, "Instances", obj_dialogs3_polo);
+ship_chich  = instance_create_layer(room_width/2, room_height - sprite_height/2 - 600, "Instances", obj_dialogs3_chicharron);
+
+with (ship_polo) {
+    image_xscale = 0.5;
+    image_yscale = 0.5;
+}
+with (ship_chich) {
+    image_xscale = 0.5;
+    image_yscale = 0.5;
+}
+
 var fade_speed = 0.02;
 var snd = snd_musica_menu;
 audio_sound_gain(snd, 0, fade_speed);
@@ -31,11 +42,10 @@ dialogos = [
     { nombre: "Polo",        sprite: spr_polo, texto: "Tienes la mente corrupta de pasar tu vida en esta organizacion criminal." },
     { nombre: "Polo",        sprite: spr_polo, texto: "Eres peor que cualquier oscuro." },
     { nombre: "Polo",        sprite: spr_polo, texto: "No hay misericordia para los de tu tipo." },
-    { nombre: "",            sprite: SpriteVacio,  texto: "(Apunta)" },
+    { nombre: "",            sprite: SpriteVacio,  texto: "..." },
     { nombre: "Polo",        sprite: spr_polo, texto: "Sorpresa." },
     { nombre: "Polo",        sprite: spr_polo, texto: "Tengo un lanza pasteles instalado en esta nave." },
     { nombre: "Polo",        sprite: spr_polo, texto: "Quieres uno Chicharron?" },
-    { nombre: "",            sprite: SpriteVacio,  texto: "(Dispara y es bloqueado por un escudo)" }
 ];
 // Estado del diálogo
 dialogo_actual = 0;
@@ -45,6 +55,7 @@ dialogo_terminado = false;
 esperando_input = false;
 velocidad_texto = 2;
 frame_counter = 0;
+iniciarDisparo = false;
 
 // Música
 global.musica_id = audio_play_sound(charlafinal, 1, true);

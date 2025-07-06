@@ -1,3 +1,4 @@
+if (dialogo_actual !=29) {
 draw_set_color(c_white);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
@@ -25,3 +26,4 @@ draw_text(box_x + 120, box_y + 16, texto_mostrado);
 // Nombre
 draw_set_color(c_white);
 draw_text(box_x + 120, box_y, dialogos[dialogo_actual].nombre);
+}
