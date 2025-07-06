@@ -22,7 +22,7 @@ dialogos = [
     { nombre:"Namdo", sprite:SpriteVacio, texto:"Chicharron muevete con las flechas.",                      tipo:"input", controles:["LEFT","RIGHT","UP","DOWN"] },
 	{ nombre:"Ribs", sprite:SpriteVacio, texto:"Hey. Muchachos los estoy viendo desde la torre 331, debo decirles algo",                     tipo:"texto"},
 	{ nombre:"Ribs", sprite:SpriteVacio, texto:"No apunten hacia algo a lo que no quieran ver volar en pedazos",                     tipo:"texto"},
-    { nombre:"Namdo", sprite:SpriteVacio, texto:"Cierto! Existe el fuego amigo, puedes herir al compañero.", tipo:"texto" },
+    { nombre:"Namdo", sprite:SpriteVacio, texto:"Cierto! Existe el fuego amigo, puedes herir a naves aliadas.", tipo:"texto" },
 	{ nombre:"Namdo", sprite:SpriteVacio, texto:"Aunque esto no es posible con las naves en modo entrenamiento", tipo:"texto" },
     { nombre:"Namdo", sprite:SpriteVacio, texto:"Ahora dispara con la barra espaciadora Polo.",                         tipo:"input", controles:["SPACE"] },
     { nombre:"Namdo", sprite:SpriteVacio, texto:"Chicharron dispara con enter.",                          tipo:"input", controles:["ENTER"] },

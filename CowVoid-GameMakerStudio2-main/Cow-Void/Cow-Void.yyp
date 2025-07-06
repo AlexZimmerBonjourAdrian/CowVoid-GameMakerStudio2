@@ -699,10 +699,10 @@
   "RoomOrderNodes":[
     {"roomId":{"name":"Menu","path":"rooms/Menu/Menu.yy",},},
     {"roomId":{"name":"VerdaderoTutorial","path":"rooms/VerdaderoTutorial/VerdaderoTutorial.yy",},},
-    {"roomId":{"name":"Supervivencia","path":"rooms/Supervivencia/Supervivencia.yy",},},
     {"roomId":{"name":"Config","path":"rooms/Config/Config.yy",},},
     {"roomId":{"name":"Dialogs","path":"rooms/Dialogs/Dialogs.yy",},},
     {"roomId":{"name":"Dialogs2","path":"rooms/Dialogs2/Dialogs2.yy",},},
+    {"roomId":{"name":"Supervivencia","path":"rooms/Supervivencia/Supervivencia.yy",},},
     {"roomId":{"name":"Dialogs3","path":"rooms/Dialogs3/Dialogs3.yy",},},
     {"roomId":{"name":"Creditos","path":"rooms/Creditos/Creditos.yy",},},
     {"roomId":{"name":"SobreviveChicha","path":"rooms/SobreviveChicha/SobreviveChicha.yy",},},
