@@ -1,4 +1,4 @@
-if (room == Duel && !global.inicioPelea) {
+if (!global.inicioPelea) {
     return;
 }
 

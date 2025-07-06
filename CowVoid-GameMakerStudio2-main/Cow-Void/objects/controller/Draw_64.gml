@@ -1,4 +1,4 @@
-if (!global.inicioPelea && room == Duel) {
+if (!global.inicioPelea) {
     var segundos = floor(global.countdown / room_speed); // 3, 2, 1, 0
     var texto = "";
 

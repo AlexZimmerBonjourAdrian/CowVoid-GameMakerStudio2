@@ -1,3 +1,5 @@
+
+
 if (random(45) < 1) {
     var meteor = instance_create_layer(
         irandom(room_width),  
@@ -16,10 +18,22 @@ audio_stop_sound(snd_musica_dialog);
 audio_sound_gain(snd_musica_menu, 0, 0.02);
 audio_stop_sound(snd_musica_menu);
 
-if (room == Duel && !global.inicioPelea) {
+if (!global.inicioPelea) {
     global.countdown -= 1;
     if (global.countdown <= 0) {
         global.inicioPelea = true;
+    }
+}
+
+if (room == PvP) {
+    if (!instance_exists(obj_player_1_polo) && !instance_exists(obj_player_2_chicharron)) {
+      
+        room_goto(Empate);
+    } else if (!instance_exists(obj_player_1_polo) && instance_exists(obj_player_2_chicharron)) {
+		
+        room_goto(GanaChicha);
+    } else if (instance_exists(obj_player_1_polo) && !instance_exists(obj_player_2_chicharron)) {
+        room_goto(GanaPolo);
     }
 }
 

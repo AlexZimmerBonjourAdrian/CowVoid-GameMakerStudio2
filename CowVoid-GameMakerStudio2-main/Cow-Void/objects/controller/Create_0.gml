@@ -7,15 +7,16 @@ global.modoMuerteSubitaDuel = false;
 global.music_volume = ini_read_real("audio", "music_volume", 0.5);
 global.ultima_room_jugada = PvP;
 
+global.inicioPelea = false;
+
 
 if (room == Duel){
-    global.inicioPelea = false;
+
     global.modoDuel = true;
 	global.hayGanador = false;
 	global.ganadorEs = noone;
 	global.hayEmpate = false;
 } else if (room == PvP){
-    global.inicioPelea = true; 
     global.modoDuel = false;
 }
 
