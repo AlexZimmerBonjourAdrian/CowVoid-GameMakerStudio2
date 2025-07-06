@@ -10,7 +10,6 @@ global.ultima_room_jugada = PvP;
 
 if (room == Duel){
     global.inicioPelea = false;
-    global.countdown = room_speed * 3;
     global.modoDuel = true;
 	global.hayGanador = false;
 	global.ganadorEs = noone;
@@ -20,8 +19,6 @@ if (room == Duel){
     global.modoDuel = false;
 }
 
-global.modoDuel = true
-global.inicioPelea = false;
 global.countdown = room_speed * 3;
 global.mensaje = "";
 
