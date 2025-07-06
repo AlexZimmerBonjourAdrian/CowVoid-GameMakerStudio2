@@ -10,7 +10,7 @@ switch (estado) {
             radio = radio_maximo;
             estado = "activo";
             t_vida = 0;
-			instance_create_layer(x - sprite_width, y - sprite_height, "Instances", Gusano);
+			instance_create_layer(x - sprite_width * 2, y - sprite_height, "Instances", Gusano);
         }
         break;
 
