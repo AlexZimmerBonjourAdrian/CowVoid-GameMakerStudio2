@@ -19,6 +19,9 @@ if (!variable_global_exists("rondaEnCurso")) {
 		global.hayGanador = true;
 		global.ganadorEs = obj_player_2_chicharron;
         global.mensaje = "¡GANA JUGADOR 2!";
+		
+		global.rondasGanadasJ1 = 0;
+		global.rondasGanadasJ2 = 0;
 		room_goto(FinalPVP);
 	}
 	
@@ -26,6 +29,9 @@ if (!variable_global_exists("rondaEnCurso")) {
 		global.hayGanador = true;
 		global.ganadorEs = obj_player_1_polo;
         global.mensaje = "¡GANA JUGADOR 1!";
+		
+		global.rondasGanadasJ1 = 0;
+		global.rondasGanadasJ2 = 0;
 		room_goto(FinalPVP);
 	}
 }
