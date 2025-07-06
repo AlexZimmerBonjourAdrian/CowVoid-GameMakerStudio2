@@ -48,13 +48,25 @@ if (keyboard_check_pressed(ord("O"))) {
 	escudo.sprite_index = EscudoChicharron
 }
 
-if (keyboard_check_pressed(vk_enter)) {
+if (shot_cooldown_timer > 0) {
+    shot_cooldown_timer -= 1;
+    if (shot_cooldown_timer <= 0) {
+        shot_count = 0;
+    }
+}
+
+if (keyboard_check_pressed(vk_enter) && shot_count < 4 && shot_cooldown_timer <= 0) {
     var bullet = instance_create_layer(x, y, "Instances", Bullet);
     bullet.x = x;
     bullet.y = y;
 	bullet.owner = id;
     
     bullet.direction = 270;
+	
+	shot_count += 1;
+    if (shot_count >= 4) {
+        shot_cooldown_timer = shot_cooldown_duration;
+    }
 }
 
 if (escudo_activado) {

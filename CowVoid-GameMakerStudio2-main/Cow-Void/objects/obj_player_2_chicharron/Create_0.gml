@@ -7,6 +7,9 @@ invul_timer = 0;
 escudos = 3;
 escudo_activado = false;
 escudo_timer = 0;
+shot_cooldown_timer = 0;
+shot_count = 0;
+shot_cooldown_duration = ceil(room_speed * 0.5);
 
 var barrera_espaciado = 300;
 var barrera_y = y + 150;
