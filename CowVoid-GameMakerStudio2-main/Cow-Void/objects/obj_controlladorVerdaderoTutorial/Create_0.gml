@@ -7,7 +7,6 @@ view_hport[0]      = 1080;
 font_tutorial = font_add("Arial", 18, false, false, true, true);
 
 
-// — el resto de tu código tal cual —
 global.dialogo_actual    = 0;
 global.namdoindicator=false;
 esperando_input          = false;
