@@ -6,7 +6,7 @@ if (!global.inicioPelea) {
 var pressed_left = keyboard_check(vk_left);  // ←
 var pressed_right = keyboard_check(vk_right); // →
 var xdirection = pressed_right - pressed_left;
-var move_speed = 30;
+var move_speed = 10;
 x = x + (xdirection * move_speed);
 
 

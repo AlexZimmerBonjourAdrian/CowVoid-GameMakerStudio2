@@ -1,1 +1,1 @@
-room_goto(MuerteChicharron);
+room_goto(MuerteChichTut);
