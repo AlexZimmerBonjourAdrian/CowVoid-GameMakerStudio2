@@ -1,4 +1,4 @@
-sprite_index = Seniorpinch;
+Csprite_index = Seniorpinch;
 alarm[0] = room_speed * 0.6;
 if (variable_instance_exists(id, "randomSpawn") && randomSpawn) {
 

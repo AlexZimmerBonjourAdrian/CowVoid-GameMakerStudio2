@@ -9,4 +9,6 @@ if (global.mensaje != "") {
     draw_set_color(c_white);
 
     draw_text(xP, yP, mensaje);
+	draw_set_font(-1)
 }
+
