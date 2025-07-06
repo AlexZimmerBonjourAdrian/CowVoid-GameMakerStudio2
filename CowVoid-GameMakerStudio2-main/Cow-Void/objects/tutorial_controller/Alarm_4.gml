@@ -1,1 +1,1 @@
-room_goto(MuertePolo);
+room_goto(MuertePoloTutorial);

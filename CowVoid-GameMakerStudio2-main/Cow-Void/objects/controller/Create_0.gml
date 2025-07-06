@@ -23,7 +23,7 @@ if (room == Duel){
 global.modoDuel = true
 global.inicioPelea = false;
 global.countdown = room_speed * 3;
-global.mensaje = "";
+
 
 
 audio_master_gain(global.music_volume);
