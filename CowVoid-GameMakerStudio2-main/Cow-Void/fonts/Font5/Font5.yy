@@ -206,14 +206,7 @@
   "sdfSpread":8,
   "size":12.0,
   "styleName":"Regular",
-<<<<<<< Updated upstream
   "textureGroupId":null,
-=======
-  "textureGroupId":{
-    "name":"Default",
-    "path":"texturegroups/Default",
-  },
->>>>>>> Stashed changes
   "TTFName":"",
   "usesSDF":false,
 }
