@@ -33,7 +33,7 @@ if (invulnerable) {
 
 
 if (keyboard_check_pressed(ord("O"))) {
-    if (escudo_activado || escudos <= 0) {
+    if (escudo_activado) {
         return;
     }
 
