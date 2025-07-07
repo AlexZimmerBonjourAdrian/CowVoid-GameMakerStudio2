@@ -204,6 +204,7 @@
     {"id":{"name":"PoloGanadorDialogo","path":"objects/PoloGanadorDialogo/PoloGanadorDialogo.yy",},},
     {"id":{"name":"PoloTuto","path":"objects/PoloTuto/PoloTuto.yy",},},
     {"id":{"name":"PoloTutoPosta","path":"objects/PoloTutoPosta/PoloTutoPosta.yy",},},
+    {"id":{"name":"SkipDebugButton","path":"objects/SkipDebugButton/SkipDebugButton.yy",},},
     {"id":{"name":"spr_chicharrondialog","path":"objects/spr_chicharrondialog/spr_chicharrondialog.yy",},},
     {"id":{"name":"timerParaTutorial","path":"objects/timerParaTutorial/timerParaTutorial.yy",},},
     {"id":{"name":"tutorial_controller","path":"objects/tutorial_controller/tutorial_controller.yy",},},
